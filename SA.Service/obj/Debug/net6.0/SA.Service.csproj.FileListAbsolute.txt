@@ -1,0 +1,12 @@
+C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Service.deps.json
+C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Service.dll
+C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Service\bin\Debug\net6.0\ref\SA.Service.dll
+C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Service.pdb
+C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.csproj.AssemblyReference.cache
+C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.AssemblyInfoInputs.cache
+C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.AssemblyInfo.cs
+C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.csproj.CoreCompileInputs.cache
+C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.dll
+C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Service\obj\Debug\net6.0\ref\SA.Service.dll
+C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.pdb
