@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d0c96454-f2e8-45cc-bcad-2744ae52cb65": {
+      "ProjectGuid": "d0c96454-f2e8-45cc-bcad-2744ae52cb65",
+      "DisplayName": "SA.Web",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
