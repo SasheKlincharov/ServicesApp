@@ -10,7 +10,7 @@ namespace SA.Data.Entity
     {
         public DateTime From { get; set; }
         public DateTime To { get; set; }
-        public User User { get; set; }
+        public SAUser User { get; set; }
         public string UserId { get; set; }
         public Tenant Tenant { get; set; }
         public Guid TenantId { get; set; }

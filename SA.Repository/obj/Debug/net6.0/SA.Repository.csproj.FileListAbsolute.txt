@@ -1,12 +1,15 @@
-C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Repository.deps.json
-C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Repository.dll
-C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Repository\bin\Debug\net6.0\ref\SA.Repository.dll
-C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Repository.pdb
-C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.csproj.AssemblyReference.cache
-C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.AssemblyInfoInputs.cache
-C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.AssemblyInfo.cs
-C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.csproj.CoreCompileInputs.cache
-C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.dll
-C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Repository\obj\Debug\net6.0\ref\SA.Repository.dll
-C:\Users\Sashko Klincharov\source\repos\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.pdb
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Repository.deps.json
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Repository.dll
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\bin\Debug\net6.0\ref\SA.Repository.dll
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Repository.pdb
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.GeneratedMSBuildEditorConfig.editorconfig
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.AssemblyInfoInputs.cache
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.AssemblyInfo.cs
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.csproj.CoreCompileInputs.cache
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.dll
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\obj\Debug\net6.0\ref\SA.Repository.dll
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.pdb
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Data.dll
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Data.pdb
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.csproj.AssemblyReference.cache
+E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.csproj.CopyComplete

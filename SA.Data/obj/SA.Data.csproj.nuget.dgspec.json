@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sashko Klincharov\\source\\repos\\ServicesApp\\SA.Data\\SA.Data.csproj": {}
+    "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sashko Klincharov\\source\\repos\\ServicesApp\\SA.Data\\SA.Data.csproj": {
+    "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sashko Klincharov\\source\\repos\\ServicesApp\\SA.Data\\SA.Data.csproj",
+        "projectUniqueName": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj",
         "projectName": "SA.Data",
-        "projectPath": "C:\\Users\\Sashko Klincharov\\source\\repos\\ServicesApp\\SA.Data\\SA.Data.csproj",
-        "packagesPath": "C:\\Users\\Sashko Klincharov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sashko Klincharov\\source\\repos\\ServicesApp\\SA.Data\\obj\\",
+        "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj",
+        "packagesPath": "C:\\Users\\Damchevski\\.nuget\\packages\\",
+        "outputPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sashko Klincharov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Damchevski\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,25 +42,25 @@
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[5.0.5, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[5.0.5, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[5.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[5.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[5.0.5, )"
             }
           },
           "imports": [

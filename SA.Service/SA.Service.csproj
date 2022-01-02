@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Implementation\" />
-    <Folder Include="Interface\" />
+    <ProjectReference Include="..\SA.Data\SA.Data.csproj" />
+    <ProjectReference Include="..\SA.Repository\SA.Repository.csproj" />
   </ItemGroup>
 
 </Project>

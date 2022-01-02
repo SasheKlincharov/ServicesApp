@@ -10,7 +10,7 @@ namespace SA.Data.Entity
     {
         public string Name { get; set; }
         public string OwnerId { get; set; }
-        public User Owner { get; set; }
+        public SAUser Owner { get; set; }
         public string Description { get; set; }
         public string LogoURL { get; set; }
         public string Color { get; set; }
@@ -28,9 +28,5 @@ namespace SA.Data.Entity
             BARBER,
 
         }
-
-
     }
-
-
 }
