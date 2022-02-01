@@ -1,0 +1,396 @@
+﻿++Solution 'ServicesApp' ‎(4 of 4 projects)
+i:{00000000-0000-0000-0000-000000000000}:ServicesApp.sln
+++SA
+i:{00000000-0000-0000-0000-000000000000}:SA
+++SA.Data
+i:{fb085b47-4244-4985-9db1-e45bdfe080b1}:SA.Data
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:c:\users\pc\documents\github\servicesapp\sa.data\sa.data.csproj
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\users\pc\documents\github\servicesapp\sa.data\sa.data.csproj
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.data\sa.data.csproj
+++Dependencies
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:>710
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:>712
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:>711
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:>1165
+++Dto
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\dto\
+++UserLoginDto.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\dto\userlogindto.cs
+++UserRegisterDto.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\dto\userregisterdto.cs
+++Entity
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\entity\
+++Base.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\entity\base.cs
+++SAUser.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\entity\sauser.cs
+++Schedule.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\entity\schedule.cs
+++Tenant.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\entity\tenant.cs
+++Migrations
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\
+++00000000000000_CreateIdentitySchema.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\00000000000000_createidentityschema.cs
+++20220102115356_InitModels.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\20220102115356_initmodels.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\applicationdbcontextmodelsnapshot.cs
+++ApplicationDbContext.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\applicationdbcontext.cs
+++Analyzers
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:analyzers
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:analyzers
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:analyzers
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:analyzers
+++Frameworks
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:frameworks
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:frameworks
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:frameworks
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:frameworks
+++Packages
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:packages
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:packages
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:packages
+++00000000000000_CreateIdentitySchema.Designer.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\00000000000000_createidentityschema.designer.cs
+++20220102115356_InitModels.Designer.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\20220102115356_initmodels.designer.cs
+++Microsoft.AspNetCore.App.Analyzers
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.5\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:c:\users\pc\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.5\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\users\pc\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.5\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.5\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++System.Text.Json.SourceGeneration
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\microsoft.netcore.app
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:c:\users\pc\documents\github\servicesapp\sa.repository\microsoft.netcore.app
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\users\pc\documents\github\servicesapp\sa.service\microsoft.netcore.app
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\microsoft.netcore.app
+++Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore (5.0.5)
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:>1175
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:>1198
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (5.0.5)
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:>1176
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:>1199
+++Microsoft.AspNetCore.Identity.UI (5.0.5)
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:>1178
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:>1202
+++Microsoft.EntityFrameworkCore.SqlServer (5.0.5)
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:>1174
+++Microsoft.EntityFrameworkCore.Tools (5.0.5)
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:>1177
+++SA.Repository
+i:{fb085b47-4244-4985-9db1-e45bdfe080b1}:SA.Repository
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\users\pc\documents\github\servicesapp\sa.repository\sa.repository.csproj
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.repository\sa.repository.csproj
+++Implementation
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:c:\users\pc\documents\github\servicesapp\sa.repository\implementation\
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\users\pc\documents\github\servicesapp\sa.service\implementation\
+++TenantRepository.cs
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:c:\users\pc\documents\github\servicesapp\sa.repository\implementation\tenantrepository.cs
+++Interface
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:c:\users\pc\documents\github\servicesapp\sa.repository\interface\
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\users\pc\documents\github\servicesapp\sa.service\interface\
+++ITenantRepository.cs
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:c:\users\pc\documents\github\servicesapp\sa.repository\interface\itenantrepository.cs
+++Projects
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:projects
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:projects
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:projects
+++AutoMapper (10.1.1)
+i:{ce3e9227-288f-4c4a-9eab-52a05e8a5ed1}:>1213
+++SA.Service
+i:{fb085b47-4244-4985-9db1-e45bdfe080b1}:SA.Service
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.service\sa.service.csproj
+++TenantService.cs
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\users\pc\documents\github\servicesapp\sa.service\implementation\tenantservice.cs
+++ITenantService.cs
+i:{8c4c5470-dbec-417e-8436-9493a981fe7f}:c:\users\pc\documents\github\servicesapp\sa.service\interface\itenantservice.cs
+++SA.Web
+i:{fb085b47-4244-4985-9db1-e45bdfe080b1}:SA.Web
+++Connected Services 
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:>1166
+++Properties
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\properties\
+++wwwroot
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\
+++Areas
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\areas\
+++Controllers
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\controllers\
+++Pages
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\areas\identity\pages\
+++Views
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\views\
+++appsettings.json
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\appsettings.json
+++Program.cs
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\program.cs
+++Startup.cs
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\startup.cs
+++SQL Server Express LocalDB (Local) (ConnectionStrings:DefaultConnection)
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:>1308
+++launchSettings.json
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\properties\launchsettings.json
+++serviceDependencies.json
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\properties\servicedependencies.json
+++css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\css\
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\
+++js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\js\
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\
+++favicon.ico
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\favicon.ico
+++Identity
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\areas\identity\
+++AccountController.cs
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\controllers\accountcontroller.cs
+++TenantController.cs
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\controllers\tenantcontroller.cs
+++Shared
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\shared\
+++_ViewImports.cshtml
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\_viewstart.cshtml
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\areas\identity\pages\_viewstart.cshtml
+++Error.cshtml
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\error.cshtml
+++Index.cshtml
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\index.cshtml
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\views\tenant\index.cshtml
+++Privacy.cshtml
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\privacy.cshtml
+++Account
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\views\account\
+++Tenant
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\views\tenant\
+++appsettings.Development.json
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\appsettings.development.json
+++MessagePackAnalyzer
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\microsoft.aspnetcore.app
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.1)
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:>1201
+++serviceDependencies.local.json
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\properties\servicedependencies.local.json
+++site.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\css\site.css
+++site.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\js\site.js
+++bootstrap
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\
+++jquery
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery\
+++jquery-validation
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery-validation-unobtrusive\
+++_Layout.cshtml
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\shared\_layout.cshtml
+++_LoginPartial.cshtml
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\shared\_loginpartial.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\shared\_validationscriptspartial.cshtml
+++Error.cshtml.cs
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\error.cshtml.cs
+++Index.cshtml.cs
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\index.cshtml.cs
+++Privacy.cshtml.cs
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\privacy.cshtml.cs
+++Login.cshtml
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\views\account\login.cshtml
+++Register.cshtml
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\views\account\register.cshtml
+++dist
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery\dist\
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery\license.txt
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++_Layout.cshtml.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\pages\shared\_layout.cshtml.css
+++jquery.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++bootstrap.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\jquery\dist\jquery.min.map
+++bootstrap.min.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.esm.js.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++bootstrap.rtl.min.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:c:\users\pc\documents\github\servicesapp\sa.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++20220131204718_database.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\20220131204718_database.cs
+++20220131204718_database.Designer.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\20220131204718_database.designer.cs
+++20220131205052_first_migration.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\20220131205052_first_migration.cs
+++20220131205052_first_migration.Designer.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\20220131205052_first_migration.designer.cs
+++Secrets.json (Local)
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:>1317
+++Secrets.json (Local) dependency is detected
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:>1318
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.0)
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:>1319
+++Microsoft.EntityFrameworkCore.Tools (6.0.0)
+i:{d0c96454-f2e8-45cc-bcad-2744ae52cb65}:>1320
+++20220131205812_first_migration1.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\20220131205812_first_migration1.cs
+++20220131205812_first_migration1.Designer.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\20220131205812_first_migration1.designer.cs
+++20220131211424_connected.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\20220131211424_connected.cs
+++20220131211424_connected.Designer.cs
+i:{3feb469f-a124-41ea-ab48-9dab854e6969}:c:\users\pc\documents\github\servicesapp\sa.data\migrations\20220131211424_connected.designer.cs

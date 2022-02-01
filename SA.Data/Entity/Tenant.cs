@@ -19,6 +19,7 @@ namespace SA.Data.Entity
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
+        //public double Rating { get; set; }
         public virtual List<Schedule> Schedules { get; set; }
 
         public enum Category

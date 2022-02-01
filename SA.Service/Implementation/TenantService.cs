@@ -24,5 +24,16 @@ namespace SA.Service.Implementation
         {
             return await this.tenantRepository.GetAllTenants();
         }
+
+        public Tenant GetTenant(Guid? id)
+        {
+            var tenant = tenantRepository.GetTenant(id);
+            return tenant;           
+        }
+
+        public void CreateNewProduct(Tenant tenant)
+        {
+            this.tenantRepository.Insert(tenant);
+        }
     }
 }

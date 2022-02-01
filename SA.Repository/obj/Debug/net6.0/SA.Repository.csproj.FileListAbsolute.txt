@@ -13,3 +13,18 @@ E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\
 E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Data.pdb
 E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.csproj.AssemblyReference.cache
 E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.csproj.CopyComplete
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Repository.deps.json
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Repository.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\bin\Debug\net6.0\ref\SA.Repository.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Repository.pdb
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Data.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Data.pdb
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.csproj.AssemblyReference.cache
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.AssemblyInfoInputs.cache
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.AssemblyInfo.cs
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.csproj.CopyComplete
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\obj\Debug\net6.0\ref\SA.Repository.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.pdb

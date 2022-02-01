@@ -11,5 +11,12 @@ namespace SA.Repository.Interface
     public interface ITenantRepository
     {
         public Task<List<Tenant>> GetAllTenants();
+    
+
+        public Tenant GetTenant(Guid? id);
+        void Insert(Tenant tenant);
+
     }
+
+
 }

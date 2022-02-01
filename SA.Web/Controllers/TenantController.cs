@@ -25,5 +25,42 @@ namespace SA.Web.Controllers
 
             return View(model);
         }
+
+        // GET: Tenant/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create([Bind("Id,Name,LogoURL,Description,Address,PhoneNumber")] Tenant tenant)
+        {
+            if (ModelState.IsValid)
+            {
+                this.tenantService.CreateNewProduct(tenant);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(tenant);
+        }
+
+        [HttpGet]
+        public IActionResult getDetails(Guid? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var tenant = tenantService.GetTenant(id);
+
+            if (tenant == null)
+            {
+                return NotFound();
+            }
+
+            return View(tenant);
+        }
+
     }
 }

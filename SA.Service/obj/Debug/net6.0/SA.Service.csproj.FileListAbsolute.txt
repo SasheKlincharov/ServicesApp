@@ -15,3 +15,20 @@ E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Service\bin
 E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Repository.pdb
 E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.csproj.AssemblyReference.cache
 E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.csproj.CopyComplete
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Service.deps.json
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Service.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\bin\Debug\net6.0\ref\SA.Service.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Service.pdb
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Data.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Repository.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Data.pdb
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Repository.pdb
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.csproj.AssemblyReference.cache
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.AssemblyInfoInputs.cache
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.AssemblyInfo.cs
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.csproj.CopyComplete
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\obj\Debug\net6.0\ref\SA.Service.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.pdb

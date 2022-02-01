@@ -11,5 +11,8 @@ namespace SA.Service.Interface
     public interface ITenantService
     {
         public Task<List<Tenant>> GetAllTenants();
+
+        public Tenant GetTenant(Guid? id);
+        void CreateNewProduct(Tenant tenant);
     }
 }

@@ -11,3 +11,17 @@ E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Data\obj\De
 E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.pdb
 E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Data\bin\Debug\net6.0\SA.Data.runtimeconfig.json
 E:\papka\finki\7 semestar\timski proekt\TPServicesApp\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.genruntimeconfig.cache
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\bin\Debug\net6.0\SA.Data.deps.json
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\bin\Debug\net6.0\SA.Data.runtimeconfig.json
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\bin\Debug\net6.0\SA.Data.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\bin\Debug\net6.0\ref\SA.Data.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\bin\Debug\net6.0\SA.Data.pdb
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.AssemblyInfoInputs.cache
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.AssemblyInfo.cs
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\ref\SA.Data.dll
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.pdb
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.genruntimeconfig.cache
+C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.csproj.AssemblyReference.cache

@@ -27,5 +27,26 @@ namespace SA.Repository.Implementation
                 .OrderBy(x => x.Name)
                 .ToListAsync();
         }
+
+        public  Tenant GetTenant(Guid? id)
+        {
+
+            return this.context.Tenants.SingleOrDefault(s => s.Id == id);
+            
+        }
+
+       public void Insert(Tenant tenant)
+        {
+            if (tenant == null)
+            {
+                throw new ArgumentNullException("entity");
+            }
+            context.Tenants.Add(tenant);
+            context.SaveChanges();
+
+        }
+
+
+
     }
 }
