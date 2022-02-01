@@ -15,6 +15,8 @@ namespace SA.Repository.Interface
 
         public Tenant GetTenant(Guid? id);
         void Insert(Tenant tenant);
+        void Delete(Tenant tenant);
+
 
     }
 

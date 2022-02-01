@@ -38,7 +38,7 @@ namespace SA.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                this.tenantService.CreateNewProduct(tenant);
+                this.tenantService.CreateNewTenant(tenant);
                 return RedirectToAction(nameof(Index));
             }
             return View(tenant);
@@ -62,5 +62,27 @@ namespace SA.Web.Controllers
             return View(tenant);
         }
 
+
+        // GET: Products/Details/5
+        public IActionResult Details(Guid? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var tenant = this.tenantService.GetTenant(id);
+
+            if (tenant == null)
+            {
+                return NotFound();
+            }
+
+            return View(tenant);
+        }
+
+
     }
+
+
 }

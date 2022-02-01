@@ -31,9 +31,20 @@ namespace SA.Service.Implementation
             return tenant;           
         }
 
-        public void CreateNewProduct(Tenant tenant)
+        public void CreateNewTenant(Tenant tenant)
         {
             this.tenantRepository.Insert(tenant);
+        }
+
+        public void DeleteTenant(Guid id)
+        {
+            var tenant = tenantRepository.GetTenant(id);
+            this.tenantRepository.Delete(tenant);
+        }
+
+        public void UpdeteExistingTenant(Tenant p)
+        {
+            throw new NotImplementedException();
         }
     }
 }

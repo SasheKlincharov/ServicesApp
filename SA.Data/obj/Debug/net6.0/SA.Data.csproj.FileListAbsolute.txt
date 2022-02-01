@@ -24,4 +24,3 @@ C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.dll
 C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\ref\SA.Data.dll
 C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.pdb
 C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.genruntimeconfig.cache
-C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.csproj.AssemblyReference.cache

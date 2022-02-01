@@ -59,8 +59,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Pc/Documents/GitHub/ServicesApp/SA.Web/Views/Tenant/Create12.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50XENyZWF0ZTEyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Documents/GitHub/ServicesApp/SA.Web/Views/Tenant/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Documents/GitHub/ServicesApp/SA.Web/Views/Tenant/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Pc/Documents/GitHub/ServicesApp/SA.Web/Views/Tenant/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pc/Documents/GitHub/ServicesApp/SA.Web/Views/Tenant/Index12.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50XEluZGV4MTIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Pc/Documents/GitHub/ServicesApp/SA.Web/Pages/Shared/_Layout.cshtml]

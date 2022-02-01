@@ -21,6 +21,17 @@ namespace SA.Repository.Implementation
             this.context = context;
         }
 
+        public void Delete(Tenant tenant)
+        {
+            if (tenant == null)
+            {
+                throw new ArgumentNullException("entity");
+            }
+            context.Tenants.Remove(tenant);
+            context.SaveChanges();
+
+        }
+
         public async Task<List<Tenant>> GetAllTenants()
         {
             return await this.context.Tenants

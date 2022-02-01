@@ -13,6 +13,11 @@ namespace SA.Service.Interface
         public Task<List<Tenant>> GetAllTenants();
 
         public Tenant GetTenant(Guid? id);
-        void CreateNewProduct(Tenant tenant);
+        void CreateNewTenant(Tenant tenant);
+
+        void DeleteTenant(Guid id);
+
+        void UpdeteExistingTenant(Tenant p);
+
     }
 }
