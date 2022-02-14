@@ -39,23 +39,22 @@ namespace SA.Repository.Implementation
                 .ToListAsync();
         }
 
-        public  Tenant GetTenant(Guid? id)
+        public  async Task<Tenant> GetTenant(Guid id)
         {
+            var result = this.context.Tenants
+                .Where(x => x.Id == id)
+                .FirstOrDefault();
 
-            return this.context.Tenants.SingleOrDefault(s => s.Id == id);
-            
+            return await Task.FromResult(result);
         }
 
-       public void Insert(Tenant tenant)
-        {
-            if (tenant == null)
-            {
-                throw new ArgumentNullException("entity");
-            }
+       public async Task<Tenant> Insert(Tenant tenant)
+       {
             context.Tenants.Add(tenant);
             context.SaveChanges();
 
-        }
+            return await Task.FromResult(tenant);
+       }
 
 
 

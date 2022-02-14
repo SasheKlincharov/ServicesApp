@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using SA.Data.Dto;
 using SA.Data.Entity;
 using SA.Service.Implementation;
@@ -10,14 +11,17 @@ namespace SA.Web.Controllers
     public class TenantController : Controller
     {
         private readonly ITenantService tenantService;
+        private readonly IUserService userService;
 
-        public TenantController(ITenantService tenantService)
+        public TenantController(ITenantService tenantService, 
+            IUserService userService)
         {
             this.tenantService = tenantService;
+            this.userService = userService;
         }
 
         [HttpGet]
-        [AllowAnonymous]
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             var model = new List<Tenant>();
@@ -27,18 +31,33 @@ namespace SA.Web.Controllers
         }
 
         // GET: Tenant/Create
-        public IActionResult Create()
+        [Authorize]
+        public async Task<IActionResult> Create()
         {
-            return View();
+            var model = new CreateTenantDto()
+            {
+                Tenant = new TenantDto(),
+                Users = new List<SelectListItem>()
+            };
+
+            var allUsers = await this.userService.GetAllUsers();
+            model.Users = allUsers;
+
+            return View(model);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,Name,LogoURL,Description,Address,PhoneNumber")] Tenant tenant)
+        [Authorize]
+        public IActionResult Create(TenantDto tenant)
         {
             if (ModelState.IsValid)
             {
-                this.tenantService.CreateNewTenant(tenant);
+                var result = this.tenantService.CreateNewTenant(tenant);
+
+                if (result == null)
+                    return BadRequest("Error!");
+
                 return RedirectToAction(nameof(Index));
             }
             return View(tenant);

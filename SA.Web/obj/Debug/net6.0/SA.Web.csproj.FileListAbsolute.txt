@@ -514,13 +514,9 @@ E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\zh-H
 E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
 E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
 E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
 E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Web\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll

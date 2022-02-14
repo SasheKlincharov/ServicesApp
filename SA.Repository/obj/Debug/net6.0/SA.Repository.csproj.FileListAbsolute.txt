@@ -28,3 +28,18 @@ C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repos
 C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.dll
 C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\obj\Debug\net6.0\ref\SA.Repository.dll
 C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.pdb
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Repository.deps.json
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Repository.dll
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\bin\Debug\net6.0\ref\SA.Repository.dll
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Repository.pdb
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Data.dll
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\bin\Debug\net6.0\SA.Data.pdb
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.csproj.AssemblyReference.cache
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.GeneratedMSBuildEditorConfig.editorconfig
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.AssemblyInfoInputs.cache
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.AssemblyInfo.cs
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.csproj.CoreCompileInputs.cache
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.csproj.CopyComplete
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.dll
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\obj\Debug\net6.0\ref\SA.Repository.dll
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Repository\obj\Debug\net6.0\SA.Repository.pdb

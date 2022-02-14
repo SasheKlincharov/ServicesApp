@@ -32,3 +32,20 @@ C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.
 C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.dll
 C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\obj\Debug\net6.0\ref\SA.Service.dll
 C:\Users\Pc\Documents\GitHub\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.pdb
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Service.deps.json
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Service.dll
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\bin\Debug\net6.0\ref\SA.Service.dll
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Service.pdb
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Data.dll
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Repository.dll
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Data.pdb
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\bin\Debug\net6.0\SA.Repository.pdb
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.csproj.AssemblyReference.cache
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.AssemblyInfoInputs.cache
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.AssemblyInfo.cs
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.csproj.CoreCompileInputs.cache
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.csproj.CopyComplete
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.dll
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\obj\Debug\net6.0\ref\SA.Service.dll
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Service\obj\Debug\net6.0\SA.Service.pdb

@@ -25,20 +25,43 @@ namespace SA.Service.Implementation
             return await this.tenantRepository.GetAllTenants();
         }
 
-        public Tenant GetTenant(Guid? id)
+        public async  Task<Tenant> GetTenant(Guid? id)
         {
-            var tenant = tenantRepository.GetTenant(id);
-            return tenant;           
+            if (id == null)
+                return null;
+
+            var tenant = await tenantRepository.GetTenant(id.Value);
+            return await Task.FromResult(tenant);           
         }
 
-        public void CreateNewTenant(Tenant tenant)
+        public async Task<Tenant> CreateNewTenant(TenantDto tenant)
         {
-            this.tenantRepository.Insert(tenant);
+            if (string.IsNullOrEmpty(tenant.Name))
+                return null;
+
+            Tenant newTenant = new Tenant()
+            {
+                Name = tenant.Name,
+                Address = tenant.Address,
+                Color = tenant.Color,
+                Latitude = tenant.Latitude,
+                Longitude = tenant.Longitude,
+                Description = tenant.Description,
+                Email = tenant.Email,
+                LogoURL = tenant.LogoURL,
+                PhoneNumber = tenant.PhoneNumber,
+                OwnerId = tenant.OwnerId,
+                Schedules = new List<Schedule>()
+            };
+
+            var result = await this.tenantRepository.Insert(newTenant);
+
+            return await Task.FromResult(result);
         }
 
-        public void DeleteTenant(Guid id)
+        public async void DeleteTenant(Guid id)
         {
-            var tenant = tenantRepository.GetTenant(id);
+            var tenant = await tenantRepository.GetTenant(id);
             this.tenantRepository.Delete(tenant);
         }
 

@@ -10,10 +10,11 @@ namespace SA.Service.Interface
 {
     public interface ITenantService
     {
-        public Task<List<Tenant>> GetAllTenants();
+        Task<List<Tenant>> GetAllTenants();
 
-        public Tenant GetTenant(Guid? id);
-        void CreateNewTenant(Tenant tenant);
+        Task<Tenant> GetTenant(Guid? id);
+        
+        Task<Tenant> CreateNewTenant(TenantDto tenant);
 
         void DeleteTenant(Guid id);
 

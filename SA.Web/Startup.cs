@@ -39,10 +39,15 @@ namespace SA.Web
 
             //Dependency Inejction for Repositories
             services.AddScoped(typeof(ITenantRepository), typeof(TenantRepository));
+            services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
 
             //Dependency Injection for Services
             services.AddTransient(typeof(ITenantService), 
                 typeof(TenantService));
+            services.AddTransient(typeof(IUserService),
+             typeof(UserService));
+
+
 
             services.Configure<CookiePolicyOptions>(options =>
             {

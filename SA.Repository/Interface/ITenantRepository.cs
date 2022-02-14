@@ -10,11 +10,9 @@ namespace SA.Repository.Interface
 {
     public interface ITenantRepository
     {
-        public Task<List<Tenant>> GetAllTenants();
-    
-
-        public Tenant GetTenant(Guid? id);
-        void Insert(Tenant tenant);
+        Task<List<Tenant>> GetAllTenants();
+        Task<Tenant> GetTenant(Guid id);
+        Task<Tenant> Insert(Tenant tenant);
         void Delete(Tenant tenant);
 
 
