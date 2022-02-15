@@ -10,6 +10,8 @@ namespace SA.Data
             : base(options)
         {
         }
+        public virtual DbSet<SAUser> Users { get; set; }
+        public virtual DbSet<ProductInTenant> ProductInTenant { get; set; } 
         public virtual DbSet<Tenant> Tenants { get; set; }
         public virtual DbSet<Schedule> Schedules { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
@@ -39,6 +41,15 @@ namespace SA.Data
                 .WithMany(k => k.Schedules)
                 .HasForeignKey(k => k.TenantId);
 
+            builder.Entity<ProductInTenant>()
+                         .HasOne(x => x.Product)
+                         .WithMany(x => x.ProductsInTenant)
+                         .HasForeignKey(x => x.ProductId);
+
+            builder.Entity<ProductInTenant>()
+                .HasOne(x => x.Tenant)
+                .WithMany(x => x.ProductsInTenant)
+                .HasForeignKey(x => x.TenantId);
         }
     }
 }

@@ -1882,6 +1882,9 @@
           }
         }
       },
+      "Syncfusion.EJ2.JavaScript/19.4.0.52": {
+        "type": "package"
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3191,7 +3194,8 @@
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "5.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.5",
           "Microsoft.AspNetCore.Identity.UI": "5.0.5",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5"
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5",
+          "Syncfusion.EJ2.JavaScript": "19.4.0.52"
         },
         "compile": {
           "bin/placeholder/SA.Data.dll": {}
@@ -3205,7 +3209,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "10.1.1",
-          "SA.Data": "1.0.0"
+          "SA.Data": "1.0.0",
+          "Syncfusion.EJ2.JavaScript": "19.4.0.52"
         },
         "compile": {
           "bin/placeholder/SA.Repository.dll": {}
@@ -3219,7 +3224,8 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "SA.Data": "1.0.0",
-          "SA.Repository": "1.0.0"
+          "SA.Repository": "1.0.0",
+          "Syncfusion.EJ2.JavaScript": "19.4.0.52"
         },
         "compile": {
           "bin/placeholder/SA.Service.dll": {}
@@ -6108,6 +6114,44 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
+      ]
+    },
+    "Syncfusion.EJ2.JavaScript/19.4.0.52": {
+      "sha512": "dHPcQvbdzDFoHW8jcFetTzVvOCl5blTvXUmI5WvCqRWa/7tkRrFxThAdOE3EBtzef5uTm1BAMsKhlPE4pCZhzA==",
+      "type": "package",
+      "path": "syncfusion.ej2.javascript/19.4.0.52",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "content/Content/ej2/bootstrap-dark.css",
+        "content/Content/ej2/bootstrap.css",
+        "content/Content/ej2/bootstrap4.css",
+        "content/Content/ej2/bootstrap5-dark.css",
+        "content/Content/ej2/bootstrap5.css",
+        "content/Content/ej2/compatibility/bootstrap.css",
+        "content/Content/ej2/compatibility/bootstrap.scss",
+        "content/Content/ej2/compatibility/bootstrap4.css",
+        "content/Content/ej2/compatibility/bootstrap4.scss",
+        "content/Content/ej2/compatibility/fabric.css",
+        "content/Content/ej2/compatibility/fabric.scss",
+        "content/Content/ej2/compatibility/highcontrast.css",
+        "content/Content/ej2/compatibility/highcontrast.scss",
+        "content/Content/ej2/compatibility/material.css",
+        "content/Content/ej2/compatibility/material.scss",
+        "content/Content/ej2/fabric-dark.css",
+        "content/Content/ej2/fabric.css",
+        "content/Content/ej2/highcontrast.css",
+        "content/Content/ej2/material-dark.css",
+        "content/Content/ej2/material.css",
+        "content/Content/ej2/tailwind-dark.css",
+        "content/Content/ej2/tailwind.css",
+        "content/Scripts/ej2/ej2.d.ts",
+        "content/Scripts/ej2/ej2.min.js",
+        "syncfusion.ej2.javascript.19.4.0.52.nupkg.sha512",
+        "syncfusion.ej2.javascript.nuspec",
+        "syncfusion_logo.png"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -9894,23 +9938,24 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.2",
       "SA.Data >= 1.0.0",
       "SA.Repository >= 1.0.0",
-      "SA.Service >= 1.0.0"
+      "SA.Service >= 1.0.0",
+      "Syncfusion.EJ2.JavaScript >= 19.4.0.52"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Damchevski\\.nuget\\packages\\": {}
+    "C:\\Users\\Pc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Web\\SA.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Web\\SA.Web.csproj",
       "projectName": "SA.Web",
-      "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Web\\SA.Web.csproj",
-      "packagesPath": "C:\\Users\\Damchevski\\.nuget\\packages\\",
-      "outputPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Web\\obj\\",
+      "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Web\\SA.Web.csproj",
+      "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Damchevski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9924,14 +9969,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj": {
-              "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj"
+            "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\SA.Data.csproj": {
+              "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\SA.Data.csproj"
             },
-            "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Repository\\SA.Repository.csproj": {
-              "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Repository\\SA.Repository.csproj"
+            "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Repository\\SA.Repository.csproj": {
+              "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Repository\\SA.Repository.csproj"
             },
-            "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Service\\SA.Service.csproj": {
-              "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Service\\SA.Service.csproj"
+            "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Service\\SA.Service.csproj": {
+              "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Service\\SA.Service.csproj"
             }
           }
         }
@@ -9971,6 +10016,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.2, )"
+          },
+          "Syncfusion.EJ2.JavaScript": {
+            "target": "Package",
+            "version": "[19.4.0.52, )"
           }
         },
         "imports": [

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SA.Data;
 
@@ -11,16 +12,17 @@ using SA.Data;
 namespace SA.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220215184520_dataString")]
+    partial class dataString
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "6.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1, 1);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, (int)1L, 1);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
@@ -55,7 +57,7 @@ namespace SA.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), (int)1L, 1);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -80,7 +82,7 @@ namespace SA.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), (int)1L, 1);
 
                     b.Property<string>("ClaimType")
                         .HasColumnType("nvarchar(max)");
@@ -157,46 +159,6 @@ namespace SA.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("SA.Data.Entity.Product", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Price")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Product");
-                });
-
-            modelBuilder.Entity("SA.Data.Entity.ProductInTenant", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("ProductId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("TenantId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("TenantId");
-
-                    b.ToTable("ProductInTenant");
                 });
 
             modelBuilder.Entity("SA.Data.Entity.SAUser", b =>
@@ -422,25 +384,6 @@ namespace SA.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("SA.Data.Entity.ProductInTenant", b =>
-                {
-                    b.HasOne("SA.Data.Entity.Product", "Product")
-                        .WithMany("ProductsInTenant")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("SA.Data.Entity.Tenant", "Tenant")
-                        .WithMany("ProductsInTenant")
-                        .HasForeignKey("TenantId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-
-                    b.Navigation("Tenant");
-                });
-
             modelBuilder.Entity("SA.Data.Entity.Schedule", b =>
                 {
                     b.HasOne("SA.Data.Entity.Tenant", "Tenant")
@@ -471,11 +414,6 @@ namespace SA.Data.Migrations
                     b.Navigation("Owner");
                 });
 
-            modelBuilder.Entity("SA.Data.Entity.Product", b =>
-                {
-                    b.Navigation("ProductsInTenant");
-                });
-
             modelBuilder.Entity("SA.Data.Entity.SAUser", b =>
                 {
                     b.Navigation("Schedules");
@@ -486,8 +424,6 @@ namespace SA.Data.Migrations
 
             modelBuilder.Entity("SA.Data.Entity.Tenant", b =>
                 {
-                    b.Navigation("ProductsInTenant");
-
                     b.Navigation("Schedules");
                 });
 #pragma warning restore 612, 618

@@ -587,6 +587,9 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Syncfusion.EJ2.JavaScript/19.4.0.52": {
+        "type": "package"
+      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1628,7 +1631,8 @@
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "5.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.5",
           "Microsoft.AspNetCore.Identity.UI": "5.0.5",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5"
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.5",
+          "Syncfusion.EJ2.JavaScript": "19.4.0.52"
         },
         "compile": {
           "bin/placeholder/SA.Data.dll": {}
@@ -2567,6 +2571,44 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.4.3.0.nupkg.sha512",
         "runtime.native.system.nuspec"
+      ]
+    },
+    "Syncfusion.EJ2.JavaScript/19.4.0.52": {
+      "sha512": "dHPcQvbdzDFoHW8jcFetTzVvOCl5blTvXUmI5WvCqRWa/7tkRrFxThAdOE3EBtzef5uTm1BAMsKhlPE4pCZhzA==",
+      "type": "package",
+      "path": "syncfusion.ej2.javascript/19.4.0.52",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "content/Content/ej2/bootstrap-dark.css",
+        "content/Content/ej2/bootstrap.css",
+        "content/Content/ej2/bootstrap4.css",
+        "content/Content/ej2/bootstrap5-dark.css",
+        "content/Content/ej2/bootstrap5.css",
+        "content/Content/ej2/compatibility/bootstrap.css",
+        "content/Content/ej2/compatibility/bootstrap.scss",
+        "content/Content/ej2/compatibility/bootstrap4.css",
+        "content/Content/ej2/compatibility/bootstrap4.scss",
+        "content/Content/ej2/compatibility/fabric.css",
+        "content/Content/ej2/compatibility/fabric.scss",
+        "content/Content/ej2/compatibility/highcontrast.css",
+        "content/Content/ej2/compatibility/highcontrast.scss",
+        "content/Content/ej2/compatibility/material.css",
+        "content/Content/ej2/compatibility/material.scss",
+        "content/Content/ej2/fabric-dark.css",
+        "content/Content/ej2/fabric.css",
+        "content/Content/ej2/highcontrast.css",
+        "content/Content/ej2/material-dark.css",
+        "content/Content/ej2/material.css",
+        "content/Content/ej2/tailwind-dark.css",
+        "content/Content/ej2/tailwind.css",
+        "content/Scripts/ej2/ej2.d.ts",
+        "content/Scripts/ej2/ej2.min.js",
+        "syncfusion.ej2.javascript.19.4.0.52.nupkg.sha512",
+        "syncfusion.ej2.javascript.nuspec",
+        "syncfusion_logo.png"
       ]
     },
     "System.Collections/4.3.0": {
@@ -6102,23 +6144,24 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 10.1.1",
-      "SA.Data >= 1.0.0"
+      "SA.Data >= 1.0.0",
+      "Syncfusion.EJ2.JavaScript >= 19.4.0.52"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Damchevski\\.nuget\\packages\\": {}
+    "C:\\Users\\Pc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Repository\\SA.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Repository\\SA.Repository.csproj",
       "projectName": "SA.Repository",
-      "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Repository\\SA.Repository.csproj",
-      "packagesPath": "C:\\Users\\Damchevski\\.nuget\\packages\\",
-      "outputPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Repository\\obj\\",
+      "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Repository\\SA.Repository.csproj",
+      "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Damchevski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6132,8 +6175,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj": {
-              "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj"
+            "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\SA.Data.csproj": {
+              "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\SA.Data.csproj"
             }
           }
         }
@@ -6151,6 +6194,10 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[10.1.1, )"
+          },
+          "Syncfusion.EJ2.JavaScript": {
+            "target": "Package",
+            "version": "[19.4.0.52, )"
           }
         },
         "imports": [

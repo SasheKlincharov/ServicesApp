@@ -51,6 +51,10 @@ namespace SA.Service.Implementation
                 LogoURL = tenant.LogoURL,
                 PhoneNumber = tenant.PhoneNumber,
                 OwnerId = tenant.OwnerId,
+                FacebookLink=tenant.FacebookLink,
+                InstagramLink=tenant.InstagramLink,
+                StartingHour = tenant.StartingHour,
+                EndHour = tenant.EndHour,
                 Schedules = new List<Schedule>()
             };
 

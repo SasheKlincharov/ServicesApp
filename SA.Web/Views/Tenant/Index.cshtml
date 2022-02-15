@@ -44,14 +44,15 @@
                     <h3 class="card-title">@item.Name</h3>
                     <p class="card-text">@item.Description</p>
 
-                    <h6>Price:</h6>
+                    <h6>Address:   <span>@item.Address</span></h6>
+                      <h6>Phone number: <span>@item.PhoneNumber</span></h6>
                 </div>
-
+      
                 <div class="card-footer">
 
-                    <a asp-controller="Tenant" asp-action="getDetails" asp-route-id="@item.Id" class="btn btn-info">Details for @item.Name</a>
-                    @**<a asp-controller="Products" asp-action="Edit" asp-route-p="@item.Id" class="btn btn-secondary">Edit</a>
-                    **@
+                              <div class="m-3">
+        <a class="btn btn-success" href="/Tenant/GetDetails?id=@item.Id">See more about @item.Name</a>
+    </div>
                 </div>
             </div>
         </div>
@@ -65,4 +66,3 @@
     }
     </div>
 }
-

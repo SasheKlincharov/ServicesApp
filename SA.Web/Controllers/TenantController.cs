@@ -63,15 +63,16 @@ namespace SA.Web.Controllers
             return View(tenant);
         }
 
-        [HttpGet]
-        public IActionResult getDetails(Guid? id)
+        [HttpGet(Name ="GetDetails")]
+
+        public async Task<IActionResult> GetDetails([FromQuery] Guid? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var tenant = tenantService.GetTenant(id);
+            var  tenant = await tenantService.GetTenant(id);
 
             if (tenant == null)
             {

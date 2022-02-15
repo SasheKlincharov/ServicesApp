@@ -8,59 +8,89 @@
     var allUsers = Model.Users;
 }
 
-
-@using(Html.BeginForm("Create", "Tenant", FormMethod.Post))
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  
+<div class="row"> <div class="col-md-4">
+   @using(Html.BeginForm("Create", "Tenant", FormMethod.Post))
+   
 {
   
-    <div class="text-form">
-        @Html.LabelFor(model => model.Tenant.Name)
-        @Html.TextBoxFor(model => model.Tenant.Name)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.Name,  new { @class= "control-label" } )
+        @Html.TextBoxFor(model => model.Tenant.Name, new { @class= "form-control" })
     </div>
 
-    <div class="text-form">
-        @Html.LabelFor(model => model.Tenant.Address)
-        @Html.TextBoxFor(model => model.Tenant.Address)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.Address,  new { @class= "control-label" })
+        @Html.TextBoxFor(model => model.Tenant.Address, new { @class= "form-control" })
     </div>
 
-    <div class="text-form">
-        @Html.LabelFor(model => model.Tenant.Description)
-        @Html.TextBoxFor(model => model.Tenant.Description)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.Description,  new { @class= "control-label" })
+        @Html.TextBoxFor(model => model.Tenant.Description, new { @class= "form-control" })
     </div>
 
-    <div class="text-form">
-        @Html.LabelFor(model => model.Tenant.Color)
-        @Html.TextBoxFor(model => model.Tenant.Color)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.Color,  new { @class= "control-label" })
+        @Html.TextBoxFor(model => model.Tenant.Color, new { @class= "form-control" })
     </div>
 
-    <div class="text-form">
-        @Html.LabelFor(model => model.Tenant.Email)
-        @Html.TextBoxFor(model => model.Tenant.Email)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.Email,  new { @class= "control-label" })
+        @Html.TextBoxFor(model => model.Tenant.Email, new { @class= "form-control" })
     </div>
 
-    <div class="text-form">
-        @Html.LabelFor(model => model.Tenant.LogoURL)
-        @Html.TextBoxFor(model => model.Tenant.LogoURL)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.LogoURL,  new { @class= "control-label" })
+        @Html.TextBoxFor(model => model.Tenant.LogoURL, new { @class= "form-control" })
     </div>
 
-    <div class="text-form">
-        @Html.LabelFor(model => model.Tenant.PhoneNumber)
-        @Html.TextBoxFor(model => model.Tenant.PhoneNumber)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.PhoneNumber,  new { @class= "control-label" })
+        @Html.TextBoxFor(model => model.Tenant.PhoneNumber, new { @class= "form-control" })
     </div>
 
-    <div class="text-form">
-        @Html.LabelFor(model => model.Tenant.Latitude)
-        @Html.TextBoxFor(model => model.Tenant.Latitude)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.Latitude,  new { @class= "control-label" })
+        @Html.TextBoxFor(model => model.Tenant.Latitude, new { @class= "form-control" })
     </div>
 
-    <div class="text-form">
-        @Html.LabelFor(model => model.Tenant.Longitude)
-        @Html.TextBoxFor(model => model.Tenant.Longitude)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.Longitude,  new { @class= "control-label" })
+        @Html.TextBoxFor(model => model.Tenant.Longitude, new { @class= "form-control" })
+    </div>
+         <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.OwnerId,  new { @class= "control-label" })
+        @Html.DropDownListFor(model => model.Tenant.OwnerId,allUsers, new { @class= "form-control" })
     </div>
 
-    <div class="text-from">
-        @Html.LabelFor(model => model.Tenant.OwnerId)
-        @Html.DropDownListFor(model => model.Tenant.OwnerId,allUsers)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.InstagramLink,  new { @class= "control-label" })
+        @Html.TextBoxFor(model => model.Tenant.InstagramLink, new { @class= "form-control" })
     </div>
+
+
+     <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.FacebookLink,  new { @class= "control-label" })
+        @Html.TextBoxFor(model => model.Tenant.FacebookLink, new { @class= "form-control" })
+    </div>
+       <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.StartingHour,  new { @class= "control-label" })
+        @Html.TextBoxFor(model => model.Tenant.StartingHour, new { @class= "form-control" })
+    </div>
+       <div class="form-group">
+        @Html.LabelFor(model => model.Tenant.EndHour,  new { @class= "control-label" })
+        @Html.TextBoxFor(model => model.Tenant.EndHour, new { @class= "form-control" })
+    </div>
+
     
     <button type="submit" class="btn btn-primary">Create</button>
-}
+}</div> </div>
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>

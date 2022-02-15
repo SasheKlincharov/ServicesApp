@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Syncfusion.EJ2.JavaScript" Version="19.4.0.52" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SA.Data\SA.Data.csproj" />
     <ProjectReference Include="..\SA.Repository\SA.Repository.csproj" />
   </ItemGroup>

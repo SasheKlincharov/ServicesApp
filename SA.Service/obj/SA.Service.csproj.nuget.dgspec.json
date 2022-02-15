@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Service\\SA.Service.csproj": {}
+    "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Service\\SA.Service.csproj": {}
   },
   "projects": {
-    "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj": {
+    "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\SA.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\SA.Data.csproj",
         "projectName": "SA.Data",
-        "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj",
-        "packagesPath": "C:\\Users\\Damchevski\\.nuget\\packages\\",
-        "outputPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\obj\\",
+        "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\SA.Data.csproj",
+        "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Damchevski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,6 +61,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.5, )"
+            },
+            "Syncfusion.EJ2.JavaScript": {
+              "target": "Package",
+              "version": "[19.4.0.52, )"
             }
           },
           "imports": [
@@ -82,17 +86,17 @@
         }
       }
     },
-    "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Repository\\SA.Repository.csproj": {
+    "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Repository\\SA.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Repository\\SA.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Repository\\SA.Repository.csproj",
         "projectName": "SA.Repository",
-        "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Repository\\SA.Repository.csproj",
-        "packagesPath": "C:\\Users\\Damchevski\\.nuget\\packages\\",
-        "outputPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Repository\\obj\\",
+        "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Repository\\SA.Repository.csproj",
+        "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Damchevski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,8 +110,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj": {
-                "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj"
+              "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\SA.Data.csproj": {
+                "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\SA.Data.csproj"
               }
             }
           }
@@ -125,6 +129,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.1.1, )"
+            },
+            "Syncfusion.EJ2.JavaScript": {
+              "target": "Package",
+              "version": "[19.4.0.52, )"
             }
           },
           "imports": [
@@ -146,17 +154,17 @@
         }
       }
     },
-    "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Service\\SA.Service.csproj": {
+    "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Service\\SA.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Service\\SA.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Service\\SA.Service.csproj",
         "projectName": "SA.Service",
-        "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Service\\SA.Service.csproj",
-        "packagesPath": "C:\\Users\\Damchevski\\.nuget\\packages\\",
-        "outputPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Service\\obj\\",
+        "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Service\\SA.Service.csproj",
+        "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Damchevski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -170,11 +178,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj": {
-                "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj"
+              "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\SA.Data.csproj": {
+                "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\SA.Data.csproj"
               },
-              "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Repository\\SA.Repository.csproj": {
-                "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Repository\\SA.Repository.csproj"
+              "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Repository\\SA.Repository.csproj": {
+                "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Repository\\SA.Repository.csproj"
               }
             }
           }
@@ -188,6 +196,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Syncfusion.EJ2.JavaScript": {
+              "target": "Package",
+              "version": "[19.4.0.52, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
