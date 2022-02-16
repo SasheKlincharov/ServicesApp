@@ -40,13 +40,15 @@ namespace SA.Web
             //Dependency Inejction for Repositories
             services.AddScoped(typeof(ITenantRepository), typeof(TenantRepository));
             services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
+            services.AddScoped(typeof(IProductRepository), typeof(ProductRepository));
 
             //Dependency Injection for Services
             services.AddTransient(typeof(ITenantService), 
                 typeof(TenantService));
             services.AddTransient(typeof(IUserService),
              typeof(UserService));
-
+            services.AddTransient(typeof(IProductService),
+            typeof(ProductService));
 
 
             services.Configure<CookiePolicyOptions>(options =>
@@ -62,7 +64,7 @@ namespace SA.Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ApplicationDbContext context)
         {
 
             if (env.IsDevelopment())
@@ -83,6 +85,8 @@ namespace SA.Web
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            context.Seed();
 
             app.UseEndpoints(endpoints =>
             {

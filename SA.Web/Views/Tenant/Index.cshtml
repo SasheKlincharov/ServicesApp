@@ -42,7 +42,7 @@
 
                 <div class="card-body">
                     <h3 class="card-title">@item.Name</h3>
-                    <p class="card-text">@item.Description</p>
+                   
 
                     <h6>Address:   <span>@item.Address</span></h6>
                       <h6>Phone number: <span>@item.PhoneNumber</span></h6>
@@ -50,9 +50,13 @@
       
                 <div class="card-footer">
 
-                              <div class="m-3">
-        <a class="btn btn-success" href="/Tenant/GetDetails?id=@item.Id">See more about @item.Name</a>
-    </div>
+                    <div class="m-3">
+                        <a class="btn btn-success" href="/Tenant/GetDetails?id=@item.Id">See more about @item.Name</a>
+                     </div>
+
+                     <div class="m-3">
+                        <a class="btn btn-danger" href="/Tenant/Delete?id=@item.Id">Delete</a>
+                     </div>
                 </div>
             </div>
         </div>

@@ -8,11 +8,6 @@ namespace SA.Data.Entity
 {
     public class Tenant : Base
     {
-
-
-        public Tenant() { Schedules = new List<Schedule>();
-            ProductsInTenant=new List<ProductInTenant>();
-        }
         public string Name { get; set; }
         public string OwnerId { get; set; }
         public SAUser Owner { get; set; }
@@ -23,27 +18,21 @@ namespace SA.Data.Entity
         public double Longitude { get; set; }
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
-        //working hours, link fb,
         public string Email { get; set; }
-        //public double Rating { get; set; }
-        public virtual List<Schedule> Schedules { get; set; }
-        public virtual List<ProductInTenant>  ProductsInTenant { get; set; }
-
-        public string StartingHour { get; set; }
-        public string EndHour { get; set; }
+        public double Rating { get; set; }
+        public DateTime StartingHour { get; set; }
+        public DateTime EndHour { get; set; }
         public string FacebookLink { get; set; }
         public string InstagramLink { get; set; }
+        public Guid CategoryId { get; set; }
+        public Category Category { get; set; }
+        public virtual List<Schedule> Schedules { get; set; }
+        public virtual List<ProductInTenant> ProductsInTenant { get; set; }
 
-
-
-
-
-        public enum Category
+        public Tenant()
         {
-            COSMETICS,
-            MASSAGE,
-            BARBER,
-
+            Schedules = new List<Schedule>();
+            ProductsInTenant = new List<ProductInTenant>();
         }
     }
 }

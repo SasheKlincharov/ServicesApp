@@ -14,6 +14,10 @@ namespace SA.Repository.Interface
         Task<Tenant> GetTenant(Guid id);
         Task<Tenant> Insert(Tenant tenant);
         void Delete(Tenant tenant);
+        Task<List<Category>> GetAllCategories();
+        Task<Guid> GetTenantCategoryByTenantId(Guid tenantId);
+        Task<bool> AddProductToTenant(string TenantId, string ProductId);
+
 
 
     }

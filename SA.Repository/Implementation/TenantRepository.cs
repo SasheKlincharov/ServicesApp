@@ -56,7 +56,46 @@ namespace SA.Repository.Implementation
             return await Task.FromResult(tenant);
        }
 
+        public async Task<List<Category>> GetAllCategories()
+        {
+            var users = new List<Category>();
+            users = context.Categories.ToList();
 
+            return await Task.FromResult(users);
+        }
 
+        public async Task<Guid> GetTenantCategoryByTenantId(Guid tenantId)
+        {
+            var res = context.Tenants.Where(x => x.Id == tenantId).FirstOrDefault();
+            
+            if (res == null)
+                return await Task.FromResult(Guid.Empty);
+
+            return await Task.FromResult(res.CategoryId);
+        }
+
+        public Task<bool> AddProductToTenant(string TenantId, string ProductId)
+        {
+            var tenant = context.Tenants.Where(x => x.Id.ToString() == TenantId).Include(x => x.ProductsInTenant).FirstOrDefault();
+            var product = context.Products.Where(x => x.Id.ToString() == ProductId).Include(x => x.ProductsInTenant).FirstOrDefault();
+
+            if (tenant == null || product == null)
+                return Task.FromResult(false);
+
+            ProductInTenant newProduct = new ProductInTenant()
+            {
+                ProductId = Guid.Parse(ProductId),
+                TenantId = Guid.Parse(TenantId)
+            };
+
+            context.ProductInTenant.Add(newProduct);
+
+            product.ProductsInTenant.Add(newProduct);
+            tenant.ProductsInTenant.Add(newProduct);
+
+            context.SaveChanges();
+
+            return Task.FromResult(true);
+        }
     }
 }

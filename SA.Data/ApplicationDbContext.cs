@@ -14,6 +14,8 @@ namespace SA.Data
         public virtual DbSet<ProductInTenant> ProductInTenant { get; set; } 
         public virtual DbSet<Tenant> Tenants { get; set; }
         public virtual DbSet<Schedule> Schedules { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

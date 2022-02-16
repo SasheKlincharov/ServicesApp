@@ -1,4 +1,5 @@
-﻿using SA.Data.Dto;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using SA.Data.Dto;
 using SA.Data.Entity;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,9 @@ namespace SA.Service.Interface
         void DeleteTenant(Guid id);
 
         void UpdeteExistingTenant(Tenant p);
+        Task<List<SelectListItem>> GetAllCategories();
+        Task<List<Product>> GetAllProductsForTenantCategory(Guid tenandId);
+        Task<bool> AddProductToTenant(AddProductToTenant addProductToTenant);
 
     }
 }

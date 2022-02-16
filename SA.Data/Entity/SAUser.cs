@@ -11,8 +11,8 @@ namespace SA.Data.Entity
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public virtual List<Schedule> Schedules { get; set; }
         public Tenant TenantOwner { get; set; }
         public Guid TenantId { get; set; }
+        public virtual List<Schedule> Schedules { get; set; }
     }
 }

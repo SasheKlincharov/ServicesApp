@@ -37,11 +37,15 @@ namespace SA.Web.Controllers
             var model = new CreateTenantDto()
             {
                 Tenant = new TenantDto(),
-                Users = new List<SelectListItem>()
+                Users = new List<SelectListItem>(),
+                Categories = new List<SelectListItem>()
             };
 
             var allUsers = await this.userService.GetAllUsers();
+            var allCategories = await this.tenantService.GetAllCategories();
+
             model.Users = allUsers;
+            model.Categories = allCategories;
 
             return View(model);
         }
@@ -64,7 +68,6 @@ namespace SA.Web.Controllers
         }
 
         [HttpGet(Name ="GetDetails")]
-
         public async Task<IActionResult> GetDetails([FromQuery] Guid? id)
         {
             if (id == null)
@@ -82,26 +85,61 @@ namespace SA.Web.Controllers
             return View(tenant);
         }
 
-
-        // GET: Products/Details/5
-        public IActionResult Details(Guid? id)
+        [HttpGet(Name = "Delete")]
+        public IActionResult Delete([FromQuery] Guid? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var tenant = this.tenantService.GetTenant(id);
+            tenantService.DeleteTenant(id.Value);
 
-            if (tenant == null)
-            {
-                return NotFound();
-            }
-
-            return View(tenant);
+            return RedirectToAction(nameof(Index));
         }
 
+        [HttpGet(Name = "AddProductToTenant")]
+        public async Task<IActionResult> AddProductToTenant([FromQuery] Guid? id)
+        {
+            if (id == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
 
+            var allProducts = await this.tenantService.GetAllProductsForTenantCategory(id.Value);
+
+            var allProductsList = allProducts.Select(x => new SelectListItem() { Text = x.Name, Value = x.Id.ToString() }).ToList();
+
+            if (allProducts == null || !allProducts.Any())
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            var productToTenantmodel = new AddProductToTenant()
+            {
+                TenantId = id.Value.ToString(),
+                ProductId = "",
+                AllProducts = allProductsList
+            };
+
+            return View(productToTenantmodel);
+        }
+
+        [HttpPost(Name ="AddProductToTenant")]
+        public async Task<IActionResult> AddProductToTenant(AddProductToTenant addProductToTenant)
+        {
+            if (addProductToTenant == null)
+                return null;
+
+           var res = await tenantService.AddProductToTenant(addProductToTenant);
+
+            if (!res)
+                return NotFound();
+
+
+            //return to tenant details
+            return RedirectToAction(nameof(Index));
+        }
     }
 
 

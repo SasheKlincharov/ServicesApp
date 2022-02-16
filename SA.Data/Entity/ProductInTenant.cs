@@ -12,8 +12,5 @@ namespace SA.Data.Entity
         public Guid  ProductId{ get; set; }
         public Tenant Tenant{ get; set; }
         public Product Product { get; set; }
-
-
-
     }
 }

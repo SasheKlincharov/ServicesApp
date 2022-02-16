@@ -18,10 +18,12 @@ namespace SA.Data.Dto
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public string OwnerId { get; set; }
-        public string StartingHour { get; set; }
-        public string EndHour { get; set; }
+        public DateTime StartingHour { get; set; }
+        public DateTime EndHour { get; set; }
         public string FacebookLink { get; set; }
         public string InstagramLink { get; set; }
+        public string CategoryId { get; set; }
+
 
     }
 }
