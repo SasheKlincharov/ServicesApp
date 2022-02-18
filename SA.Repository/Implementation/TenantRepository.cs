@@ -97,5 +97,15 @@ namespace SA.Repository.Implementation
 
             return Task.FromResult(true);
         }
+
+        public void Update(Tenant tenant)
+        {
+            if (tenant == null)
+            {
+                throw new ArgumentNullException("entity");
+            }
+            context.Tenants.Update(tenant);
+            context.SaveChanges();
+        }
     }
 }

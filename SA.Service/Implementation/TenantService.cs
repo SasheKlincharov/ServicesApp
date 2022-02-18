@@ -76,7 +76,8 @@ namespace SA.Service.Implementation
 
         public void UpdeteExistingTenant(Tenant p)
         {
-            throw new NotImplementedException();
+            this.tenantRepository.Update(p);
+
         }
 
 

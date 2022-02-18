@@ -17,9 +17,7 @@ namespace SA.Repository.Interface
         Task<List<Category>> GetAllCategories();
         Task<Guid> GetTenantCategoryByTenantId(Guid tenantId);
         Task<bool> AddProductToTenant(string TenantId, string ProductId);
-
-
-
+        void Update(Tenant p);
     }
 
 

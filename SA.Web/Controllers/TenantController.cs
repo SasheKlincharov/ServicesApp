@@ -140,6 +140,56 @@ namespace SA.Web.Controllers
             //return to tenant details
             return RedirectToAction(nameof(Index));
         }
+
+        // GET: Products/Edit/5
+        [HttpGet(Name ="Edit")]
+        public async Task<IActionResult> Edit([FromQuery]Guid? id)
+        {
+            if (id == null)
+            {
+                return  NotFound();
+            }
+           
+            var tenant = this.tenantService.GetTenant(id).Result;
+
+            if (tenant == null)
+            {
+                return NotFound();
+            }
+
+
+            var tenantDto = new EditTenantDto()
+            {
+                Tenant = tenant,
+                TenantId = tenant.Id,
+                Users = new List<SelectListItem>(),
+                Categories = new List<SelectListItem>()
+            };
+
+            var allUsers = await this.userService.GetAllUsers();
+            var allCategories = await this.tenantService.GetAllCategories();
+            tenantDto.Users = allUsers;
+            tenantDto.Categories = allCategories;
+
+            
+            return View(tenantDto);
+        }
+
+        [HttpPost(Name ="Edit")]
+        public async Task<IActionResult> Edit(EditTenantDto tenant)
+        {
+          
+            var t = tenant.Tenant;
+            
+
+            if (ModelState.IsValid)
+            {
+                    this.tenantService.UpdeteExistingTenant(t);
+              
+               return RedirectToAction(nameof(Index));
+            }
+            return View(tenant);
+        }
     }
 
 

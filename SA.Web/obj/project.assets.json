@@ -9943,19 +9943,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Damchevski\\.nuget\\packages\\": {}
+    "C:\\Users\\Pc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Web\\SA.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Web\\SA.Web.csproj",
       "projectName": "SA.Web",
-      "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Web\\SA.Web.csproj",
-      "packagesPath": "C:\\Users\\Damchevski\\.nuget\\packages\\",
-      "outputPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Web\\obj\\",
+      "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Web\\SA.Web.csproj",
+      "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Damchevski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9969,14 +9969,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj": {
-              "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Data\\SA.Data.csproj"
+            "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\SA.Data.csproj": {
+              "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Data\\SA.Data.csproj"
             },
-            "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Repository\\SA.Repository.csproj": {
-              "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Repository\\SA.Repository.csproj"
+            "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Repository\\SA.Repository.csproj": {
+              "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Repository\\SA.Repository.csproj"
             },
-            "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Service\\SA.Service.csproj": {
-              "projectPath": "E:\\papka\\finki\\7 semestar\\timski proekt\\ServicesApp\\SA.Service\\SA.Service.csproj"
+            "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Service\\SA.Service.csproj": {
+              "projectPath": "C:\\Users\\Pc\\Documents\\GitHub\\ServicesApp\\SA.Service\\SA.Service.csproj"
             }
           }
         }
