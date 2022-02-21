@@ -39,23 +39,34 @@ namespace SA.Repository.Implementation
                 .ToListAsync();
         }
 
-        public  async Task<Tenant> GetTenant(Guid id)
+        public async Task<Tenant> GetTenant(Guid id)
         {
             var result = this.context.Tenants
                 .Where(x => x.Id == id)
+                .Include(x => x.ProductsInTenant)
+                .ThenInclude(x => x.Product)
                 .FirstOrDefault();
 
             return await Task.FromResult(result);
         }
 
-       public async Task<Tenant> Insert(Tenant tenant)
-       {
+        public async Task<Tenant> Insert(Tenant tenant)
+        {
             context.Tenants.Add(tenant);
             context.SaveChanges();
 
             return await Task.FromResult(tenant);
-       }
+        }
 
+        public void Update(Tenant tenant)
+        {
+            if (tenant == null)
+            {
+                throw new ArgumentNullException("entity");
+            }
+            context.Tenants.Update(tenant);
+            context.SaveChanges();
+        }
         public async Task<List<Category>> GetAllCategories()
         {
             var users = new List<Category>();
@@ -67,7 +78,7 @@ namespace SA.Repository.Implementation
         public async Task<Guid> GetTenantCategoryByTenantId(Guid tenantId)
         {
             var res = context.Tenants.Where(x => x.Id == tenantId).FirstOrDefault();
-            
+
             if (res == null)
                 return await Task.FromResult(Guid.Empty);
 
@@ -98,14 +109,9 @@ namespace SA.Repository.Implementation
             return Task.FromResult(true);
         }
 
-        public void Update(Tenant tenant)
+        public async Task<List<Product>> GetAllProductsForTenant(string TenantId)
         {
-            if (tenant == null)
-            {
-                throw new ArgumentNullException("entity");
-            }
-            context.Tenants.Update(tenant);
-            context.SaveChanges();
+            return await context.ProductInTenant.Where(x => x.TenantId.ToString() == TenantId).Select(z => z.Product).ToListAsync();
         }
     }
 }

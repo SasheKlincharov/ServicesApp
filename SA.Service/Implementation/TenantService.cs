@@ -29,13 +29,13 @@ namespace SA.Service.Implementation
             return await this.tenantRepository.GetAllTenants();
         }
 
-        public async  Task<Tenant> GetTenant(Guid? id)
+        public async Task<Tenant> GetTenant(Guid? id)
         {
             if (id == null)
                 return null;
 
             var tenant = await tenantRepository.GetTenant(id.Value);
-            return await Task.FromResult(tenant);           
+            return await Task.FromResult(tenant);
         }
 
         public async Task<Tenant> CreateNewTenant(TenantDto tenant)
@@ -55,8 +55,8 @@ namespace SA.Service.Implementation
                 LogoURL = tenant.LogoURL,
                 PhoneNumber = tenant.PhoneNumber,
                 OwnerId = tenant.OwnerId,
-                FacebookLink=tenant.FacebookLink,
-                InstagramLink=tenant.InstagramLink,
+                FacebookLink = tenant.FacebookLink,
+                InstagramLink = tenant.InstagramLink,
                 StartingHour = tenant.StartingHour,
                 EndHour = tenant.EndHour,
                 CategoryId = Guid.Parse(tenant.CategoryId),
@@ -99,7 +99,7 @@ namespace SA.Service.Implementation
         {
             var tenantCategory = await this.tenantRepository.GetTenantCategoryByTenantId(tenandId);
 
-            if(tenantCategory == null)
+            if (tenantCategory == null)
             {
                 return null;
             }
@@ -109,12 +109,17 @@ namespace SA.Service.Implementation
             return allProductsForCategory;
         }
 
-        public Task<bool> AddProductToTenant(AddProductToTenant addProductToTenant)
+        public async Task<bool> AddProductToTenant(AddProductToTenant addProductToTenant)
         {
             if (string.IsNullOrEmpty(addProductToTenant.TenantId) || string.IsNullOrEmpty(addProductToTenant.ProductId))
-                return Task.FromResult(false);
+                return await Task.FromResult(false);
 
-            var res = this.tenantRepository.AddProductToTenant(addProductToTenant.TenantId, addProductToTenant.ProductId);
+            var allProductsForTenant = await this.tenantRepository.GetAllProductsForTenant(addProductToTenant.TenantId);
+
+            if (allProductsForTenant.Any(x => x.Id.ToString() == addProductToTenant.ProductId))
+                return await Task.FromResult(false);
+
+            var res = await this.tenantRepository.AddProductToTenant(addProductToTenant.TenantId, addProductToTenant.ProductId);
 
             return res;
         }

@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model SA.Data.Dto.CreateProductDto
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+
+    var allCategories = Model.Categories;
+
+}
+
+<div class="row">
+    <div class="col-md-4">
+        @using (Html.BeginForm("Create", "Product", FormMethod.Post))
+
+        {
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Product.Name,  new { @class= "control-label" } )
+                @Html.TextBoxFor(model => model.Product.Name, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Product.Price,  new { @class= "control-label" } )
+                @Html.TextBoxFor(model => model.Product.Price, new { @class= "form-control" })
+
+            </div>
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Product.Image,  new { @class= "control-label" } )
+                @Html.TextBoxFor(model => model.Product.Image, new { @class= "form-control" })
+            </div>
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Product.CategoryId,  new { @class= "control-label" })
+                @Html.DropDownListFor(model => model.Product.CategoryId,allCategories, new { @class= "form-control" })
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Create</button>
+        }
+    </div>
+
+</div>
+

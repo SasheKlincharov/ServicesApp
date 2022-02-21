@@ -10,7 +10,6 @@ namespace SA.Data.Dto
 {
     public class EditTenantDto
     {
-        public Guid TenantId { get; set; }
         public Tenant Tenant { get; set; }
         public List<SelectListItem> Users { get; set; }
         public List<SelectListItem> Categories { get; set; }

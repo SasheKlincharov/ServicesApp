@@ -23,5 +23,51 @@ namespace SA.Repository.Implementation
             return await context.Products.Where(x => x.CategoryId == categoryId)
                 .Include(x => x.Category).ToListAsync();
         }
+
+        public void Delete(Product Product)
+        {
+            if (Product == null)
+            {
+                throw new ArgumentNullException("entity");
+            }
+            context.Products.Remove(Product);
+            context.SaveChanges();
+
+        }
+
+        public async Task<List<Product>> GetAllProducts()
+        {
+            return await this.context.Products
+                .OrderBy(x => x.Name)
+                .ToListAsync();
+        }
+
+        public async Task<Product> GetProduct(Guid id)
+        {
+            var result = this.context.Products
+                .Where(x => x.Id == id)
+                .Include(x => x.Category)
+                .FirstOrDefault();
+
+            return await Task.FromResult(result);
+        }
+
+        public async Task<Product> Insert(Product Product)
+        {
+            context.Products.Add(Product);
+            context.SaveChanges();
+
+            return await Task.FromResult(Product);
+        }
+
+        public void Update(Product Product)
+        {
+            if (Product == null)
+            {
+                throw new ArgumentNullException("entity");
+            }
+            context.Products.Update(Product);
+            context.SaveChanges();
+        }
     }
 }

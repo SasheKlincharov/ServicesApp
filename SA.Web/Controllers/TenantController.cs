@@ -13,7 +13,7 @@ namespace SA.Web.Controllers
         private readonly ITenantService tenantService;
         private readonly IUserService userService;
 
-        public TenantController(ITenantService tenantService, 
+        public TenantController(ITenantService tenantService,
             IUserService userService)
         {
             this.tenantService = tenantService;
@@ -67,7 +67,7 @@ namespace SA.Web.Controllers
             return View(tenant);
         }
 
-        [HttpGet(Name ="GetDetails")]
+        [HttpGet(Name = "GetDetails")]
         public async Task<IActionResult> GetDetails([FromQuery] Guid? id)
         {
             if (id == null)
@@ -75,7 +75,7 @@ namespace SA.Web.Controllers
                 return NotFound();
             }
 
-            var  tenant = await tenantService.GetTenant(id);
+            var tenant = await tenantService.GetTenant(id);
 
             if (tenant == null)
             {
@@ -125,31 +125,27 @@ namespace SA.Web.Controllers
             return View(productToTenantmodel);
         }
 
-        [HttpPost(Name ="AddProductToTenant")]
+        [HttpPost(Name = "AddProductToTenant")]
         public async Task<IActionResult> AddProductToTenant(AddProductToTenant addProductToTenant)
         {
             if (addProductToTenant == null)
                 return null;
 
-           var res = await tenantService.AddProductToTenant(addProductToTenant);
-
-            if (!res)
-                return NotFound();
-
+            var res = await tenantService.AddProductToTenant(addProductToTenant);
 
             //return to tenant details
             return RedirectToAction(nameof(Index));
         }
 
         // GET: Products/Edit/5
-        [HttpGet(Name ="Edit")]
-        public async Task<IActionResult> Edit([FromQuery]Guid? id)
+        [HttpGet(Name = "Edit")]
+        public async Task<IActionResult> Edit([FromQuery] Guid? id)
         {
             if (id == null)
             {
-                return  NotFound();
+                return NotFound();
             }
-           
+
             var tenant = this.tenantService.GetTenant(id).Result;
 
             if (tenant == null)
@@ -161,7 +157,6 @@ namespace SA.Web.Controllers
             var tenantDto = new EditTenantDto()
             {
                 Tenant = tenant,
-                TenantId = tenant.Id,
                 Users = new List<SelectListItem>(),
                 Categories = new List<SelectListItem>()
             };
@@ -171,24 +166,18 @@ namespace SA.Web.Controllers
             tenantDto.Users = allUsers;
             tenantDto.Categories = allCategories;
 
-            
+
             return View(tenantDto);
         }
 
-        [HttpPost(Name ="Edit")]
-        public async Task<IActionResult> Edit(EditTenantDto tenant)
+        [HttpPost(Name = "Edit")]
+        public async Task<IActionResult> Edit(Tenant tenant)
         {
-          
-            var t = tenant.Tenant;
-            
 
-            if (ModelState.IsValid)
-            {
-                    this.tenantService.UpdeteExistingTenant(t);
-              
-               return RedirectToAction(nameof(Index));
-            }
-            return View(tenant);
+            this.tenantService.UpdeteExistingTenant(tenant);
+
+            return RedirectToAction(nameof(Index));
+
         }
     }
 
