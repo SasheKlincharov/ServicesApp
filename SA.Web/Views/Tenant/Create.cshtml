@@ -6,134 +6,141 @@
     Layout = "~/Pages/Shared/_Layout.cshtml";
 
     var allUsers = Model.Users;
-    var allCategories = Model.Categories; 
-   
+    var allCategories = Model.Categories;
+
 }
 
-<div class="row"> <div class="col-md-4">
-   @using(Html.BeginForm("Create", "Tenant", FormMethod.Post))
-   
-{
-  
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.Name,  new { @class= "control-label" } )
-        @Html.TextBoxFor(model => model.Tenant.Name, new { @class= "form-control" })
+<div class="row">
+    <div class="col-md-4">
+        @using (Html.BeginForm("Create", "Tenant", FormMethod.Post))
+
+        {
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.Name,  new { @class= "control-label" } )
+                @Html.TextBoxFor(model => model.Tenant.Name, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.Address,  new { @class= "control-label" })
+                @Html.TextBoxFor(model => model.Tenant.Address, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.Description,  new { @class= "control-label" })
+                @Html.TextAreaFor(model => model.Tenant.Description, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.Color,  new { @class= "control-label" })
+                @Html.TextBoxFor(model => model.Tenant.Color, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.Email,  new { @class= "control-label" })
+                @Html.TextBoxFor(model => model.Tenant.Email, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.LogoURL,  new { @class= "control-label" })
+                @Html.TextBoxFor(model => model.Tenant.LogoURL, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.PhoneNumber,  new { @class= "control-label" })
+                @Html.TextBoxFor(model => model.Tenant.PhoneNumber, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.Latitude,  new { @class= "control-label" })
+                @Html.TextBoxFor(model => model.Tenant.Latitude, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.Longitude,  new { @class= "control-label" })
+                @Html.TextBoxFor(model => model.Tenant.Longitude, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.OwnerId,  new { @class= "control-label" })
+                @Html.DropDownListFor(model => model.Tenant.OwnerId,allUsers, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.InstagramLink,  new { @class= "control-label" })
+                @Html.TextBoxFor(model => model.Tenant.InstagramLink, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.FacebookLink,  new { @class= "control-label" })
+                @Html.TextBoxFor(model => model.Tenant.FacebookLink, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.StartingHour,  new { @class= "control-label" })
+                <input type="text" name="Tenant.StartingHour" id="startHour" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.EndHour,  new { @class= "control-label" })
+                <input type="text" name="Tenant.EndHour" id="endHour" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.CategoryId,  new { @class= "control-label" })
+                @Html.DropDownListFor(model => model.Tenant.CategoryId,allCategories, new { @class= "form-control" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tenant.ScheduleTime,  new { @class= "control-label" })
+                @Html.TextBoxFor(model => model.Tenant.ScheduleTime, new { @class= "form-control" })
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Create</button>
+        }
     </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.Address,  new { @class= "control-label" })
-        @Html.TextBoxFor(model => model.Tenant.Address, new { @class= "form-control" })
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.Description,  new { @class= "control-label" })
-        @Html.TextAreaFor(model => model.Tenant.Description, new { @class= "form-control" })
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.Color,  new { @class= "control-label" })
-        @Html.TextBoxFor(model => model.Tenant.Color, new { @class= "form-control" })
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.Email,  new { @class= "control-label" })
-        @Html.TextBoxFor(model => model.Tenant.Email, new { @class= "form-control" })
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.LogoURL,  new { @class= "control-label" })
-        @Html.TextBoxFor(model => model.Tenant.LogoURL, new { @class= "form-control" })
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.PhoneNumber,  new { @class= "control-label" })
-        @Html.TextBoxFor(model => model.Tenant.PhoneNumber, new { @class= "form-control" })
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.Latitude,  new { @class= "control-label" })
-        @Html.TextBoxFor(model => model.Tenant.Latitude, new { @class= "form-control" })
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.Longitude,  new { @class= "control-label" })
-        @Html.TextBoxFor(model => model.Tenant.Longitude, new { @class= "form-control" })
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.OwnerId,  new { @class= "control-label" })
-        @Html.DropDownListFor(model => model.Tenant.OwnerId,allUsers, new { @class= "form-control" })
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.InstagramLink,  new { @class= "control-label" })
-        @Html.TextBoxFor(model => model.Tenant.InstagramLink, new { @class= "form-control" })
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.FacebookLink,  new { @class= "control-label" })
-        @Html.TextBoxFor(model => model.Tenant.FacebookLink, new { @class= "form-control" })
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.StartingHour,  new { @class= "control-label" })
-        <input type="text" name="Tenant.StartingHour" id="startHour" class="form-control"/>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.EndHour,  new { @class= "control-label" })
-        <input type="text" name="Tenant.EndHour" id="endHour" class="form-control"/>
-    </div>
-
-     <div class="form-group">
-        @Html.LabelFor(model => model.Tenant.CategoryId,  new { @class= "control-label" })
-        @Html.DropDownListFor(model => model.Tenant.CategoryId,allCategories, new { @class= "form-control" })
-      </div>
-
-    
-    <button type="submit" class="btn btn-primary">Create</button>
-}</div> 
 
 </div>
 
 
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 
 
 <script>
-   $.noConflict();
-        jQuery(document).ready(function ($) {
-    $(function () {
-    
-        $('#endHour').timepicker({
-            timeFormat: 'h:mm p',
-            interval: 60,
-            minTime: '10',
-            maxTime: '6:00pm',
-            defaultTime: '11',
-            startTime: '10:00',
-            dynamic: false,
-            dropdown: true,
-            scrollbar: true
-        });
-    
-        $('#startHour').timepicker({
-            timeFormat: 'h:mm p',
-            interval: 60,
-            minTime: '10',
-            maxTime: '6:00pm',
-            defaultTime: '11',
-            startTime: '10:00',
-            dynamic: false,
-            dropdown: true,
-            scrollbar: true
+       $.noConflict();
+            jQuery(document).ready(function ($) {
+        $(function () {
+
+            $('#endHour').timepicker({
+                timeFormat: 'h:mm p',
+                interval: 60,
+                minTime: '10',
+                maxTime: '6:00pm',
+                defaultTime: '11',
+                startTime: '10:00',
+                dynamic: false,
+                dropdown: true,
+                scrollbar: true
+            });
+
+            $('#startHour').timepicker({
+                timeFormat: 'h:mm p',
+                interval: 60,
+                minTime: '10',
+                maxTime: '6:00pm',
+                defaultTime: '11',
+                startTime: '10:00',
+                dynamic: false,
+                dropdown: true,
+                scrollbar: true
+            });
         });
     });
-});
 
 </script>

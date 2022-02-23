@@ -16,12 +16,14 @@ namespace SA.Service.Implementation
     {
         private readonly ITenantRepository tenantRepository;
         private readonly IProductRepository productRepository;
+        private readonly IUserRepository userRepository;
 
         public TenantService(ITenantRepository tenantRepository,
-            IProductRepository productRepository)
+            IProductRepository productRepository, IUserRepository userRepository)
         {
             this.tenantRepository = tenantRepository;
             this.productRepository = productRepository;
+            this.userRepository = userRepository;
         }
 
         public async Task<List<Tenant>> GetAllTenants()
@@ -122,6 +124,25 @@ namespace SA.Service.Implementation
             var res = await this.tenantRepository.AddProductToTenant(addProductToTenant.TenantId, addProductToTenant.ProductId);
 
             return res;
+        }
+
+        public async Task<bool> Schedule(ScheduleDto schedule)
+        {
+
+            var users = await this.userRepository.GetAllUsers();
+
+            var user = users.Where(x => x.UserName == schedule.UserId).FirstOrDefault();
+
+            var tenant = await this.tenantRepository.GetTenant(Guid.Parse(schedule.TenantId));
+
+            if (user == null || tenant == null)
+                return await Task.FromResult(false);
+
+            var result = await this.tenantRepository.CreateSchedule(tenant, user, schedule);
+
+
+            return await Task.FromResult(result);
+
         }
     }
 }

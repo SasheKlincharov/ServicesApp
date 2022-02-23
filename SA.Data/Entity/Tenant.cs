@@ -28,6 +28,7 @@ namespace SA.Data.Entity
         public Category Category { get; set; }
         public virtual List<Schedule> Schedules { get; set; }
         public virtual List<ProductInTenant> ProductsInTenant { get; set; }
+        public int ScheduleTime { get; set; }
 
         public Tenant()
         {

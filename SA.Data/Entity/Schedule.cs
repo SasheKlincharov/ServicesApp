@@ -14,6 +14,7 @@ namespace SA.Data.Entity
         public string UserId { get; set; }
         public Tenant Tenant { get; set; }
         public Guid TenantId { get; set; }
+        public bool IsScheduled { get; set; }
 
     }
 }

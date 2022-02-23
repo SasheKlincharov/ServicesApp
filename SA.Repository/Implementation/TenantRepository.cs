@@ -113,5 +113,25 @@ namespace SA.Repository.Implementation
         {
             return await context.ProductInTenant.Where(x => x.TenantId.ToString() == TenantId).Select(z => z.Product).ToListAsync();
         }
+
+        public async Task<bool> CreateSchedule(Tenant tenant, SAUser user, ScheduleDto schedule)
+        {
+            Schedule newSchedule = new Schedule()
+            {
+                From = DateTime.Parse(schedule.From),
+                To = DateTime.Parse(schedule.To),
+                IsScheduled = true,
+                TenantId = tenant.Id,
+                UserId = user.Id
+            };
+
+            tenant.Schedules.Add(newSchedule);
+
+            context.SaveChanges();
+
+            return await Task.FromResult(true);
+
+
+        }
     }
 }

@@ -5,14 +5,18 @@
 
 @{
     var allProducts = Model.AllProducts;
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+
 }
 
-   @using(Html.BeginForm("AddProductToTenant", "Tenant", FormMethod.Post)){
+@using (Html.BeginForm("AddProductToTenant", "Tenant", FormMethod.Post))
+{
 
 
-    @Html.HiddenFor( x => x.TenantId);
+    @Html.HiddenFor( x => x.TenantId)
+    ;
 
-     @Html.DropDownListFor(model => model.ProductId,allProducts, new { @class= "form-control" })
+    @Html.DropDownListFor(model => model.ProductId,allProducts, new { @class= "form-control" })
 
-     <button class="btn btn-primary" type="submit">Save</button>
-     }
+    <button class="btn btn-primary" type="submit">Save</button>
+}

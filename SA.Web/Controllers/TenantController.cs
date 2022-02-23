@@ -179,6 +179,86 @@ namespace SA.Web.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+
+        [HttpGet(Name = "Calendar")]
+        public async Task<IActionResult> Calendar([FromQuery] Guid? tenantId)
+        {
+            if (tenantId == null)
+                return RedirectToAction(nameof(Index));
+
+            CalendarDto calendar = new CalendarDto();
+
+            calendar.ForDay = DateTime.Now;
+            calendar.TenantId = tenantId.Value;
+
+            var tenant = await this.tenantService.GetTenant(tenantId);
+
+            if (tenant == null)
+                return RedirectToAction(nameof(Index));
+
+            calendar.Tenant = tenant;
+
+            List<Schedule> allSchedules = new List<Schedule>();
+
+            var startDate = tenant.StartingHour;
+            var endHour = tenant.EndHour;
+
+            DateTime momStartHour = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, startDate.Hour, startDate.Minute, 0);
+
+            DateTime momEndHour = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, startDate.Hour, startDate.Minute + tenant.ScheduleTime, 0);
+
+
+            while (momStartHour.Hour < endHour.Hour)
+            {
+                var temp = 60 / tenant.ScheduleTime;
+                while (temp > 0)
+                {
+                    var momSchedule = new Schedule()
+                    {
+                        From = momStartHour,
+                        To = momEndHour,
+                        TenantId = tenant.Id,
+                        Tenant = tenant,
+                        IsScheduled = false,
+                        User = null
+                    };
+
+                    momStartHour = momEndHour;
+
+                    momEndHour = momStartHour.AddMinutes(tenant.ScheduleTime);
+
+                    temp--;
+
+                    allSchedules.Add(momSchedule);
+                }
+            }
+
+            calendar.Schedules = allSchedules;
+
+
+            //zemi gi site zakazani termini od Schedules za denesnito den
+            // ili odbranito den i filtriraj gi
+
+
+            return View(calendar);
+        }
+
+
+        [HttpPost(Name = "Schedule")]
+        public async Task<IActionResult> Schedule([FromBody] ScheduleDto input)
+        {
+            //ne stasue datata vo input pravilno
+
+
+            var result = await this.tenantService.Schedule(input);
+
+            if (result)
+            {
+                return RedirectToAction("Calendar", new { input.TenantId });
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 
 

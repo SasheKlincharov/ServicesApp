@@ -37,3 +37,4 @@ E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Data\obj\Debug\net6.0\SA.
 E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Data\obj\Debug\net6.0\ref\SA.Data.dll
 E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.pdb
 E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.genruntimeconfig.cache
+E:\papka\finki\7 semestar\timski proekt\ServicesApp\SA.Data\obj\Debug\net6.0\SA.Data.csproj.AssemblyReference.cache

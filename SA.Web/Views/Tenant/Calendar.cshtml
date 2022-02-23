@@ -1,0 +1,84 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model SA.Data.Dto.CalendarDto
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+    var test = "damcevskiane7@gmail.com";
+}
+
+
+<div class="container">
+    @for (int i = 0; i < Model.Schedules.Count; i++)
+     {
+        var item = Model.Schedules[i];
+        var user = item.User;
+
+        if (i % 3 == 0)
+        {
+            @:<div class="row">
+        }
+
+        
+        <div class="col-md-3 m-4">
+            <div class="card" style="width: 18rem; height: 10rem;"> 
+
+                <div class="card-body">
+                    <h3 class="card-title">@item.From - @item.To</h3>
+                   
+                   
+                    <button onclick="schedule('@item.TenantId', '@item.From', '@item.To', '@test')">Schedule</button>
+
+                </div>
+      
+            </div>
+        </div>
+
+
+
+        if (i % 3 == 2)
+        {
+            @:</div>
+        }
+    }
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+
+<script>
+    function schedule(tenantId, from, to, user){
+        var input = {
+            "TenantId": tenantId,
+            "From": from,
+            "To": to,
+            "UserId": user
+        };
+
+        console.log(input)
+
+         $.ajax({
+            url:"/Tenant/Schedule",
+            type: "POST",
+            data: {
+                "TenantId": tenantId,
+                "From": from,
+                "To": to,
+                "UserId": user
+            },
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function(data){
+                console.log("test")
+            }
+        });
+
+      
+       
+
+
+
+    }
+
+</script>

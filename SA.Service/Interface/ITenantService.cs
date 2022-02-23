@@ -14,7 +14,7 @@ namespace SA.Service.Interface
         Task<List<Tenant>> GetAllTenants();
 
         Task<Tenant> GetTenant(Guid? id);
-        
+
         Task<Tenant> CreateNewTenant(TenantDto tenant);
 
         void DeleteTenant(Guid id);
@@ -23,6 +23,8 @@ namespace SA.Service.Interface
         Task<List<SelectListItem>> GetAllCategories();
         Task<List<Product>> GetAllProductsForTenantCategory(Guid tenandId);
         Task<bool> AddProductToTenant(AddProductToTenant addProductToTenant);
+
+        Task<bool> Schedule(ScheduleDto schedule);
 
     }
 }

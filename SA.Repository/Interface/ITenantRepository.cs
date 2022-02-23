@@ -20,6 +20,7 @@ namespace SA.Repository.Interface
         Task<Guid> GetTenantCategoryByTenantId(Guid tenantId);
         Task<bool> AddProductToTenant(string TenantId, string ProductId);
         Task<List<Product>> GetAllProductsForTenant(string TenantId);
+        Task<bool> CreateSchedule(Tenant tenant, SAUser user, ScheduleDto schedule);
     }
 
 

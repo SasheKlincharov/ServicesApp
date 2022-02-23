@@ -23,7 +23,7 @@ namespace SA.Data.Dto
         public string FacebookLink { get; set; }
         public string InstagramLink { get; set; }
         public string CategoryId { get; set; }
-
+        public int ScheduleTime { get; set; }
 
     }
 }
