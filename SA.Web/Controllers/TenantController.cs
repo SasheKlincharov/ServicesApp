@@ -181,14 +181,22 @@ namespace SA.Web.Controllers
         }
 
         [HttpGet(Name = "Calendar")]
-        public async Task<IActionResult> Calendar([FromQuery] Guid? tenantId)
+        public async Task<IActionResult> Calendar([FromQuery] Guid? tenantId, [FromQuery] string? Date)
         {
             if (tenantId == null)
                 return RedirectToAction(nameof(Index));
 
+
+            DateTime forDayTime = DateTime.Now;
+
+            if (!string.IsNullOrEmpty(Date))
+            {
+                forDayTime = DateTime.Parse(Date);
+            }
+
             CalendarDto calendar = new CalendarDto();
 
-            calendar.ForDay = DateTime.Now;
+            calendar.ForDay = forDayTime;
             calendar.TenantId = tenantId.Value;
 
             var tenant = await this.tenantService.GetTenant(tenantId);
@@ -203,9 +211,9 @@ namespace SA.Web.Controllers
             var startDate = tenant.StartingHour;
             var endHour = tenant.EndHour;
 
-            DateTime momStartHour = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, startDate.Hour, startDate.Minute, 0);
+            DateTime momStartHour = new DateTime(forDayTime.Year, forDayTime.Month, forDayTime.Day, startDate.Hour, startDate.Minute, 0);
 
-            DateTime momEndHour = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, startDate.Hour, startDate.Minute + tenant.ScheduleTime, 0);
+            DateTime momEndHour = new DateTime(forDayTime.Year, forDayTime.Month, forDayTime.Day, startDate.Hour, startDate.Minute + tenant.ScheduleTime, 0);
 
 
             while (momStartHour.Hour < endHour.Hour)
@@ -236,28 +244,40 @@ namespace SA.Web.Controllers
             calendar.Schedules = allSchedules;
 
 
-            //zemi gi site zakazani termini od Schedules za denesnito den
-            // ili odbranito den i filtriraj gi
 
+            List<Schedule> schedulesForDate = this.tenantService.GetAllSchedulesForDate(tenant.Id, forDayTime);
+
+            foreach (var schedule in calendar.Schedules)
+            {
+                var item = schedulesForDate.Where(x => x.From == schedule.From).FirstOrDefault();
+                if (item != null)
+                {
+                    schedule.IsScheduled = true;
+                    schedule.User = item.User;
+                }
+            }
 
             return View(calendar);
         }
 
 
         [HttpPost(Name = "Schedule")]
-        public async Task<IActionResult> Schedule([FromBody] ScheduleDto input)
+        public async Task<IActionResult> Schedule(ScheduleDto input)
         {
-            //ne stasue datata vo input pravilno
+
+            var res = new JsonResult(true);
 
 
             var result = await this.tenantService.Schedule(input);
 
             if (result)
             {
-                return RedirectToAction("Calendar", new { input.TenantId });
+                res.StatusCode = 200;
+                return res;
             }
 
-            return RedirectToAction(nameof(Index));
+            res.StatusCode = 400;
+            return res;
         }
     }
 

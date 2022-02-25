@@ -25,6 +25,7 @@ namespace SA.Service.Interface
         Task<bool> AddProductToTenant(AddProductToTenant addProductToTenant);
 
         Task<bool> Schedule(ScheduleDto schedule);
+        List<Schedule> GetAllSchedulesForDate(Guid tenantId, DateTime date);
 
     }
 }

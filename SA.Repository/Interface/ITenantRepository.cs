@@ -21,6 +21,7 @@ namespace SA.Repository.Interface
         Task<bool> AddProductToTenant(string TenantId, string ProductId);
         Task<List<Product>> GetAllProductsForTenant(string TenantId);
         Task<bool> CreateSchedule(Tenant tenant, SAUser user, ScheduleDto schedule);
+        List<Schedule> GetAllSchedulesForDate(Guid tenantId, DateTime date);
     }
 
 

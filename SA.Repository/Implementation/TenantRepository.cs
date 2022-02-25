@@ -133,5 +133,11 @@ namespace SA.Repository.Implementation
 
 
         }
+
+        public List<Schedule> GetAllSchedulesForDate(Guid tenantId, DateTime date)
+        {
+            return context.Schedules.Where(x => x.TenantId == tenantId && x.From.Date == date.Date).Include(x => x.User).ToList();
+
+        }
     }
 }

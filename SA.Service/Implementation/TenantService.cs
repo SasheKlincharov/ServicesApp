@@ -144,5 +144,10 @@ namespace SA.Service.Implementation
             return await Task.FromResult(result);
 
         }
+
+        public List<Schedule> GetAllSchedulesForDate(Guid tenantId, DateTime date)
+        {
+            return this.tenantRepository.GetAllSchedulesForDate(tenantId, date);
+        }
     }
 }
