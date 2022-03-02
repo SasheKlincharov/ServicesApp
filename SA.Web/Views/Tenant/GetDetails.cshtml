@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/css/themify-icons.css">
 
-<div class="container">
+<div class="container" style="color:@Model.Color">
     <div class="row justify-content-center">
 
         <div class="col-md-7 col-lg-4 mb-5 mb-lg-0 wow fadeIn">
@@ -17,7 +17,7 @@
                 <div class="card-body p-1-9 p-xl-5">
                     <div class="mb-4">
                         <h3 class="h4 mb-0"></h3>
-                        <span class="text-primary">@Model.Name &amp;</span>
+                        <span class="text-primary">@Model.Name</span>
                     </div>
 
 
@@ -30,9 +30,7 @@
                     <ul class="social-icon-style2 ps-0">
                         <li><a href="@Model.FacebookLink" class="rounded-3"><i class="fab fa-facebook-f"></i> </a></li>
                         <li><a href="@Model.InstagramLink" class="rounded-3"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#!" class="rounded-3"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="#!" class="rounded-3"><i class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
+                                       </ul>
 
 
                 </div>
@@ -89,30 +87,39 @@
                                     if (i == 0)
                                     {
                                         <div class="tab-pane fade show active" id="@product.Name" role="tabpanel" aria-labelledby="@product.Name-tab">
-                                            <p>
-                                                Description
-                                            </p>
-                                            <p>
-                                                Cena
-                                            </p>
-                                            <p>
-                                                Dr nes..
-                                            </p>
-                                        </div>
+                                           
+
+            <div class="card" style="width: 18rem; height: 30rem;">
+                <img class="card-img-top" src="@product.Image" style="height: 50%" alt="Image for product!" />
+
+                <div class="card-body">
+                    <h3 class="card-title">@product.Name</h3>
+                   
+
+                    <h6>Price:   <span>@product.Price</span></h6>
+                </div>
+      
+                </div>
+            </div>
+
+
+
                                     }
                                     else
                                     {
                                         <div class="tab-pane fade" id="@product.Name" role="tabpanel" aria-labelledby="@product.Name-tab">
-                                            <p>
-                                                Description
-                                            </p>
-                                            <p>
-                                                Cena
-                                            </p>
-                                            <p>
-                                                Dr nes..
-                                            </p>
-                                        </div>
+<div class="card" style="width: 18rem; height: 30rem;">
+                <img class="card-img-top" src="@product.Image" style="height: 50%" alt="Image for product!" />
+
+                <div class="card-body">
+                    <h3 class="card-title">@product.Name</h3>
+                   
+
+                    <h6>Price:   <span>@product.Price</span></h6>
+                </div>
+      
+                </div>
+            </div>
                                     }
 
                                     i++;
@@ -127,10 +134,12 @@
                         <h2 class="mb-0 text-primary">Actions</h2>
 
                         <div class="m-3">
-                            <a class="btn btn-success" href="/Tenant/Calendar?tenantId=@Model.Id">See calendar </a>
+                            <a class="btn btn-primary "style="float:left"  href="/Tenant/Calendar?tenantId=@Model.Id">See calendar </a>
                         </div>
+
+
                         <div class="m-3">
-                            <a class="btn btn-success" href="/Tenant/AddProductToTenant?id=@Model.Id">Add product to tenant </a>
+                            <a class="btn btn-secondary" href="/Tenant/AddProductToTenant?id=@Model.Id">Add product to tenant </a>
                         </div>
 
 

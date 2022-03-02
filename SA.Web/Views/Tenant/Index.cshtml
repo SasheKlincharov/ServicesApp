@@ -9,16 +9,18 @@
 
 @{
     
-    <div class="container">
+    <div class="container" >
 
     @**<div class="m-3">
         <a class="btn btn-success" asp-controller="Tenant" asp-action="Create">Add new Product</a>
     </div>
     **@
+                         @if (User.IsInRole("ADMIN"))
+{
      <div class="m-3">
         <a class="btn btn-success" href="/Tenant/Create">Add new Tenant</a>
     </div>
-
+}
 
     <div>
         Choose tenant:
@@ -51,14 +53,20 @@
                 <div class="card-footer">
 
                     <div class="m-3">
-                        <a class="btn btn-success" href="/Tenant/GetDetails?id=@item.Id">See more about @item.Name</a>
+                        <a class="btn btn-success" href="/Tenant/GetDetails?id=@item.Id">See more</a>
                      </div>
 
-                     <div class="m-3">
+
+                 
+
+                                         @if (User.IsInRole("ADMIN"))
+{
+                     <div class="m-3" >
                         <a class="btn btn-danger" href="/Tenant/Delete?id=@item.Id">Delete</a>
                         <a class="btn btn-danger" href="/Tenant/Edit?id=@item.Id">Edit</a>
 
                      </div>
+}
                 </div>
             </div>
         </div>

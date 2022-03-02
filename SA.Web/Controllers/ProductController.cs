@@ -33,7 +33,8 @@ namespace SA.Web.Controllers
         }
 
         // GET: Product/Create
-        [Authorize]
+        [Authorize(Roles = "ADMIN")]
+
         public async Task<IActionResult> Create()
         {
             var model = new CreateProductDto()
@@ -84,6 +85,8 @@ namespace SA.Web.Controllers
                     return View(Product);
                 }
         */
+        [Authorize(Roles = "ADMIN")]
+
         [HttpGet(Name = "Delete")]
         public IActionResult Delete([FromQuery] Guid? id)
         {
@@ -99,6 +102,8 @@ namespace SA.Web.Controllers
 
 
         // GET: Products/Edit/5
+        [Authorize(Roles = "ADMIN")]
+
         [HttpGet(Name = "Edit")]
         public async Task<IActionResult> Edit([FromQuery] Guid? id)
         {
@@ -129,6 +134,7 @@ namespace SA.Web.Controllers
 
             return View(ProductDto);
         }
+        [Authorize(Roles = "ADMIN")]
 
         [HttpPost(Name = "Edit")]
         public async Task<IActionResult> Edit(Product Product)

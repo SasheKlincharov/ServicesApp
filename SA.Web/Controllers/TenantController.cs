@@ -31,7 +31,8 @@ namespace SA.Web.Controllers
         }
 
         // GET: Tenant/Create
-        [Authorize]
+        [Authorize(Roles = "ADMIN")]
+
         public async Task<IActionResult> Create()
         {
             var model = new CreateTenantDto()
@@ -52,7 +53,7 @@ namespace SA.Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize]
+        [Authorize(Roles = "ADMIN")]
         public IActionResult Create(TenantDto tenant)
         {
             if (ModelState.IsValid)
@@ -84,7 +85,7 @@ namespace SA.Web.Controllers
 
             return View(tenant);
         }
-
+        [Authorize(Roles = "ADMIN")]
         [HttpGet(Name = "Delete")]
         public IActionResult Delete([FromQuery] Guid? id)
         {
@@ -97,6 +98,7 @@ namespace SA.Web.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+        [Authorize(Roles = "ADMIN")]
 
         [HttpGet(Name = "AddProductToTenant")]
         public async Task<IActionResult> AddProductToTenant([FromQuery] Guid? id)
@@ -124,7 +126,7 @@ namespace SA.Web.Controllers
 
             return View(productToTenantmodel);
         }
-
+        [Authorize(Roles = "ADMIN")]
         [HttpPost(Name = "AddProductToTenant")]
         public async Task<IActionResult> AddProductToTenant(AddProductToTenant addProductToTenant)
         {
@@ -138,6 +140,8 @@ namespace SA.Web.Controllers
         }
 
         // GET: Products/Edit/5
+        [Authorize(Roles = "ADMIN")]
+
         [HttpGet(Name = "Edit")]
         public async Task<IActionResult> Edit([FromQuery] Guid? id)
         {
@@ -169,6 +173,7 @@ namespace SA.Web.Controllers
 
             return View(tenantDto);
         }
+        [Authorize(Roles = "ADMIN")]
 
         [HttpPost(Name = "Edit")]
         public async Task<IActionResult> Edit(Tenant tenant)
