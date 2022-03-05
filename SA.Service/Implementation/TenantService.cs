@@ -62,6 +62,7 @@ namespace SA.Service.Implementation
                 StartingHour = tenant.StartingHour,
                 EndHour = tenant.EndHour,
                 CategoryId = Guid.Parse(tenant.CategoryId),
+                ScheduleTime = tenant.ScheduleTime,
                 Schedules = new List<Schedule>()
             };
 
