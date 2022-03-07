@@ -36,11 +36,12 @@
         }
 
         var elementId = item.From.Hour + "_" + item.From.Minute;
-        <div class="col-md-3 m-4" id="@elementId">
-            <div class="card" style="width: 18rem; height: 10rem;"> 
-
+        <div class="col-md-3 m-4 justify-content-center" id="@elementId">
+            <div class="card" style="text-align:center; width: 18rem; height: 20rem;"> 
                 <div class="card-body">
-                    <h3 class="card-title">@item.From - @item.To</h3>
+                    <h5 class="card-title">From: @item.From <br> To: @item.To</h5>
+                                     <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ06oKb7tFRwk5xWGy-SgWCJ2TlYbMWwgEqUA&usqp=CAU" style="height: 50%" alt="Image for product!" />
+
                    
                     @if(itemUser!=null){
                         <div>
@@ -48,6 +49,8 @@
                         </div>
                    
                     }
+
+                    <div class="card-footer">
                    
                     @{
                          if(item.IsScheduled){
@@ -57,6 +60,7 @@
                     }
 
                     }
+                    </div>
                 </div>
       
             </div>

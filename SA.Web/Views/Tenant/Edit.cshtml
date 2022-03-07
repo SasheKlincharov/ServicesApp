@@ -9,11 +9,12 @@
 
 <h1>Edit</h1>
 
-<div class="row"> <div class="col-md-4">
-   @using(Html.BeginForm("Edit", "Tenant", FormMethod.Post)) 
+   @using(Html.BeginForm("Edit", "Tenant", FormMethod.Post,  new { @class= "row" })) 
 {
     @Html.HiddenFor(x => x.Tenant.Id);     
   
+    <div class="col-md-6">
+        
     <div class="form-group">
         @Html.LabelFor(model => model.Tenant.Name,  new { @class= "control-label" } )
         @Html.TextBoxFor(model => model.Tenant.Name, new { @class= "form-control" })
@@ -28,7 +29,9 @@
         @Html.LabelFor(model => model.Tenant.Description,  new { @class= "control-label" })
         @Html.TextAreaFor(model => model.Tenant.Description, new { @class= "form-control" })
     </div>
+    
 
+    
     <div class="form-group">
         @Html.LabelFor(model => model.Tenant.Color,  new { @class= "control-label" })
         @Html.TextBoxFor(model => model.Tenant.Color, new { @class= "form-control" })
@@ -48,6 +51,9 @@
         @Html.LabelFor(model => model.Tenant.PhoneNumber,  new { @class= "control-label" })
         @Html.TextBoxFor(model => model.Tenant.PhoneNumber, new { @class= "form-control" })
     </div>
+    </div>
+
+    <div class="col-md-6">
 
     <div class="form-group">
         @Html.LabelFor(model => model.Tenant.Latitude,  new { @class= "control-label" })
@@ -90,10 +96,9 @@
       </div>
 
     
-    <button type="submit" class="btn btn-primary">Create</button>
-}</div> 
-
-</div>
+    <button type="submit" class="mt-2 btn btn-primary">Create</button>
+    </div>
+}
 
 
 

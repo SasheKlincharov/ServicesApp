@@ -8,6 +8,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/css/themify-icons.css">
 
+<style>
+    div {
+        color: @Model.Color;
+    }
+</style>
+
 <div class="container" style="color:@Model.Color">
     <div class="row justify-content-center">
 
@@ -17,14 +23,14 @@
                 <div class="card-body p-1-9 p-xl-5">
                     <div class="mb-4">
                         <h3 class="h4 mb-0"></h3>
-                        <span class="text-primary">@Model.Name</span>
+                        <span style="color:@Model.Color"">@Model.Name</span>
                     </div>
 
 
                     <ul class="list-unstyled mb-4">
-                        <li class="mb-3"><a href="#!"><i class="far fa-envelope display-25 me-3 text-secondary"></i>@Model.Email</a></li>
-                        <li class="mb-3"><a href="#!"><i class="fas fa-mobile-alt display-25 me-3 text-secondary"></i>@Model.PhoneNumber</a></li>
-                        <li><a href="#!"><i class="fas fa-map-marker-alt display-25 me-3 text-secondary"></i>@Model.Address</a></li>
+                        <li class="mb-3"><a href="#!"><i class="far fa-envelope display-25 me-3 "></i>@Model.Email</a></li>
+                        <li class="mb-3"><a href="#!"><i class="fas fa-mobile-alt display-25 me-3 "></i>@Model.PhoneNumber</a></li>
+                        <li><a href="#!"><i class="fas fa-map-marker-alt display-25 me-3"></i>@Model.Address</a></li>
                     </ul>
 
                     <ul class="social-icon-style2 ps-0">
@@ -37,11 +43,11 @@
             </div>
         </div>
 
-        <div class="col-lg-8">
+        <div class="col-lg-8" style="color:@Model.Color;">
             <div class="ps-lg-1-6 ps-xl-5">
                 <div class="mb-5 wow fadeIn">
                     <div class="text-start mb-1-6 wow fadeIn">
-                        <h2 class="h1 mb-0 text-primary">@Model.Name</h2>
+                        <h2 class="h1 mb-0">@Model.Name</h2>
                     </div>
                     <p>
                         @Model.Description
@@ -51,9 +57,9 @@
 
                 <div class="mb-5 wow fadeIn">
                     <div class="text-start mb-1-6 wow fadeIn">
-                        <h2 class="mb-0 text-primary">Products</h2>
+                        <h2 style="color:@Model.Color"  class="mb-0 ">Products</h2>
 
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <ul class="nav nav-tabs justify-content-center" style="text-align:center" id="myTab" role="tablist">
 
                             @{
                                 int i = 0;
@@ -61,14 +67,14 @@
                                 {
                                     if (i == 0)
                                     {
-                                        <li class="nav-item" role="presentation">
+                                        <li class="nav-item justify-content-center" role="presentation">
                                             <button class="nav-link active" id="@product.Name-tab" data-bs-toggle="tab" data-bs-target="#@product.Name" type="button" role="tab" aria-controls="@product.Name" aria-selected="true">@product.Name</button>
                                         </li>
                                     }
                                     else
                                     {
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="@product.Name-tab" data-bs-toggle="tab" data-bs-target="#@product.Name" type="button" role="tab" aria-controls="@product.Name" aria-selected="true">@product.Name</button>
+                                        <li class="nav-item justify-content-center" role="presentation">
+                                            <button class="nav-link justify-content-center" id="@product.Name-tab" data-bs-toggle="tab" data-bs-target="#@product.Name" type="button" role="tab" aria-controls="@product.Name" aria-selected="true">@product.Name</button>
                                         </li>
                                     }
 
@@ -86,10 +92,10 @@
                                 {
                                     if (i == 0)
                                     {
-                                        <div class="tab-pane fade show active" id="@product.Name" role="tabpanel" aria-labelledby="@product.Name-tab">
+                                        <div class="tab-pane fade show active " id="@product.Name" role="tabpanel" aria-labelledby="@product.Name-tab">
                                            
 
-            <div class="card" style="width: 18rem; height: 30rem;">
+            <div class="card justify-align-content-center" style="text-align:center; width: 18rem; height: 30rem;">
                 <img class="card-img-top" src="@product.Image" style="height: 50%" alt="Image for product!" />
 
                 <div class="card-body">
