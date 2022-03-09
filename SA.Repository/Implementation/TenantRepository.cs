@@ -64,7 +64,30 @@ namespace SA.Repository.Implementation
             {
                 throw new ArgumentNullException("entity");
             }
-            context.Tenants.Update(tenant);
+
+            var tenantS = context.Tenants.Where(x => x.Id == tenant.Id).FirstOrDefault();
+            if (tenantS == null)
+                throw new ArgumentNullException("entity");
+
+
+            tenantS.OwnerId = tenant.OwnerId;
+            tenantS.Latitude = tenant.Latitude;
+            tenantS.Longitude = tenant.Longitude;
+            tenantS.InstagramLink = tenant.InstagramLink;
+            tenantS.LogoURL = tenant.LogoURL;
+            tenantS.Name = tenant.Name;
+            tenantS.Color = tenant.Color;
+            tenantS.Email = tenant.Email;
+            tenantS.Address = tenant.Address;
+            tenantS.Description = tenant.Description;
+            tenantS.EndHour = tenant.EndHour;
+            tenantS.StartingHour = tenant.StartingHour;
+            tenantS.CategoryId = tenant.CategoryId;
+            tenantS.PhoneNumber = tenant.PhoneNumber;
+            tenantS.Rating = tenant.Rating;
+
+
+            context.Tenants.Update(tenantS);
             context.SaveChanges();
         }
         public async Task<List<Category>> GetAllCategories()

@@ -7,7 +7,6 @@
 }
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -24,7 +23,7 @@
 
 <div class="container">
     @for (int i = 0; i < Model.Schedules.Count; i++)
-     {
+    {
         var item = Model.Schedules[i];
         var user = User.Identity.Name;
 
@@ -36,35 +35,39 @@
         }
 
         var elementId = item.From.Hour + "_" + item.From.Minute;
-        <div class="col-md-3 m-4 justify-content-center" id="@elementId">
-            <div class="card" style="text-align:center; width: 18rem; height: 20rem;"> 
-                <div class="card-body">
-                    <h5 class="card-title">From: @item.From <br> To: @item.To</h5>
-                                     <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ06oKb7tFRwk5xWGy-SgWCJ2TlYbMWwgEqUA&usqp=CAU" style="height: 50%" alt="Image for product!" />
+            <div class="col-md-3 m-4 justify-content-center" id="@elementId">
+                <div class="card" style="text-align:center; width: 18rem; height: 20rem;"> 
+                    <div class="card-body">
+                        <h5 class="card-title">From: @item.From <br> To: @item.To</h5>
+                                         <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ06oKb7tFRwk5xWGy-SgWCJ2TlYbMWwgEqUA&usqp=CAU" style="height: 50%" alt="Image for product!" />
 
-                   
-                    @if(itemUser!=null){
-                        <div>
-                          User: @itemUser.FirstName  
+
+                    @if (itemUser != null)
+                    {
+                                <div>
+                                  User: @itemUser.FirstName  
+                                </div>
+
+                    }
+
+                        <div class="card-footer">
+
+                        @{
+                            if (item.IsScheduled)
+                            {
+                                   <button disabled class="btn btn-primary" onclick="schedule('@item.TenantId', '@item.From', '@item.To', '@user', '@elementId')">Schedule</button>
+                            }
+                            else
+                            {
+                                     <button class="btn btn-primary" onclick="schedule('@item.TenantId', '@item.From', '@item.To', '@user', '@elementId')">Schedule</button>
+                            }
+
+                        }
                         </div>
-                   
-                    }
-
-                    <div class="card-footer">
-                   
-                    @{
-                         if(item.IsScheduled){
-                       <button disabled class="btn btn-primary" onclick="schedule('@item.TenantId', '@item.From', '@item.To', '@user', '@elementId')">Schedule</button>
-                    }else{
-                         <button class="btn btn-primary" onclick="schedule('@item.TenantId', '@item.From', '@item.To', '@user', '@elementId')">Schedule</button>
-                    }
-
-                    }
                     </div>
+
                 </div>
-      
             </div>
-        </div>
 
 
 
